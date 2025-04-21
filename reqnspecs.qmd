@@ -1,0 +1,10 @@
+---
+title: "Requirements and Specifications"
+description: "add later"
+author: "Vehicle 1"
+# date: "11/19/24"
+draft: false
+---
+
+Requirements and Specifications (i.e., what does the design need to do?)
+
