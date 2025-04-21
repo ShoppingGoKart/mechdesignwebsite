@@ -1,0 +1,9 @@
+---
+title: "Evaluation of Design"
+description: "add later"
+author: "Vehicle 1"
+# date: "11/19/24"
+draft: false
+---
+
+Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)
