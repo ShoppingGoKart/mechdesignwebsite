@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "futurework.html",
+    "href": "futurework.html",
+    "title": "Future Work",
+    "section": "",
+    "text": "Future Work"
+  },
+  {
+    "objectID": "conclusions.html",
+    "href": "conclusions.html",
+    "title": "Conclusions",
+    "section": "",
+    "text": "Conclusions"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introduction and Project Background",
+    "section": "",
+    "text": "Introduction and Project Background"
+  },
+  {
+    "objectID": "evaluationofdesign.html",
+    "href": "evaluationofdesign.html",
+    "title": "Evaluation of Design",
+    "section": "",
+    "text": "Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Vehicle 1",
+    "section": "",
+    "text": "The project that our team will be working on is building a functional go-kart vehicle. Parts of the design that are in scope are the functional 4-wheel steering system, a brake, and a motorized power supply. Parts that are out of scope are the creation of a motor, no motion in reverse, or the inclusion of headlights, seatbelts, or airbags. Aerodynamics and designing for optimal weight distribution will also not be considered in the design process."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Vehicle 1",
+    "section": "",
+    "text": "The project that our team will be working on is building a functional go-kart vehicle. Parts of the design that are in scope are the functional 4-wheel steering system, a brake, and a motorized power supply. Parts that are out of scope are the creation of a motor, no motion in reverse, or the inclusion of headlights, seatbelts, or airbags. Aerodynamics and designing for optimal weight distribution will also not be considered in the design process."
+  },
+  {
+    "objectID": "index.html#about-us",
+    "href": "index.html#about-us",
+    "title": "Vehicle 1",
+    "section": "About Us",
+    "text": "About Us"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Vehicle 1",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThank you Jacob, Drew, Prof Medelson, MACH"
+  },
+  {
+    "objectID": "reqnspecs.html",
+    "href": "reqnspecs.html",
+    "title": "Requirements and Specifications",
+    "section": "",
+    "text": "Requirements and Specifications (i.e., what does the design need to do?)"
+  },
+  {
+    "objectID": "designfeatures.html",
+    "href": "designfeatures.html",
+    "title": "Design Features of Main Subsystems",
+    "section": "",
+    "text": "Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?) This section must include at least two quantitative design decisions made via analysis described in the Evaluation of Design section."
+  }
+]

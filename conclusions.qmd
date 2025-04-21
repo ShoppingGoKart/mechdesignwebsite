@@ -1,9 +1,0 @@
----
-title: "Conclusions"
-description: "add later"
-author: "Vehicle 1"
-# date: "11/19/24"
-draft: false
----
-
-Conclusions
