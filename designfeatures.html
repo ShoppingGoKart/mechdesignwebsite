@@ -95,28 +95,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./intro.html"> 
-<span class="menu-text">Intro &amp; Background</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./reqnspecs.html"> 
-<span class="menu-text">Requirements &amp; Specs</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./designfeatures.html" aria-current="page"> 
-<span class="menu-text">Design Features of Main Subsystems</span></a>
+<span class="menu-text">Subsystems Design Features</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./evaluationofdesign.html"> 
-<span class="menu-text">Evaluation of Design</span></a>
+<span class="menu-text">Evaluation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./futurework.html"> 
-<span class="menu-text">Future Work</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./conclusions.html"> 
-<span class="menu-text">Conclusions</span></a>
+    <a class="nav-link" href="./references.html"> 
+<span class="menu-text">References</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -129,8 +117,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#steerage-subsystem" id="toc-steerage-subsystem" class="nav-link active" data-scroll-target="#steerage-subsystem">Steerage Subsystem</a></li>
+  <li><a href="#frame-subsystem" id="toc-frame-subsystem" class="nav-link" data-scroll-target="#frame-subsystem">Frame Subsystem</a></li>
+  <li><a href="#braking-subsystem" id="toc-braking-subsystem" class="nav-link" data-scroll-target="#braking-subsystem">Braking Subsystem</a></li>
+  <li><a href="#motor-subsystem" id="toc-motor-subsystem" class="nav-link" data-scroll-target="#motor-subsystem">Motor Subsystem</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -165,9 +162,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?) This section must include at least two quantitative design decisions made via analysis described in the Evaluation of Design section.</p>
+<!-- Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?)
+This section must include at least two quantitative design decisions made via analysis described in the Evaluation of Design section.
+Identifies specific subsystems and/or features where significant work has been done by the team to advance the design. -->
+<section id="steerage-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="steerage-subsystem">Steerage Subsystem</h2>
+<p>The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions.</p>
+</section>
+<section id="frame-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="frame-subsystem">Frame Subsystem</h2>
+<p>The frame is built with a shopping cart and 80/20</p>
+</section>
+<section id="braking-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="braking-subsystem">Braking Subsystem</h2>
+<p>The braking system will involve a lever that will apply a normal force on the back wheel of the goKart when pulled down. The braking line will be applied to both of the wheels.</p>
+</section>
+<section id="motor-subsystem" class="level2">
+<h2 class="anchored" data-anchor-id="motor-subsystem">Motor Subsystem</h2>
+<p>For the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

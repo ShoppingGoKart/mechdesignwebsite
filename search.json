@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "futurework.html",
-    "href": "futurework.html",
-    "title": "Future Work",
-    "section": "",
-    "text": "Future Work"
-  },
-  {
-    "objectID": "conclusions.html",
-    "href": "conclusions.html",
-    "title": "Conclusions",
-    "section": "",
-    "text": "Conclusions"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -21,59 +7,87 @@
     "text": "About this site"
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "Introduction and Project Background",
-    "section": "",
-    "text": "Introduction and Project Background"
+    "objectID": "index.html#introduction-and-project-background",
+    "href": "index.html#introduction-and-project-background",
+    "title": "Shopping Kart Go Kart",
+    "section": "Introduction and Project Background",
+    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1/3 HP motot and includes functional steerage, breaking, and acceleration."
   },
   {
-    "objectID": "evaluationofdesign.html",
-    "href": "evaluationofdesign.html",
-    "title": "Evaluation of Design",
-    "section": "",
-    "text": "Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)"
+    "objectID": "index.html#requirements-specifications",
+    "href": "index.html#requirements-specifications",
+    "title": "Shopping Kart Go Kart",
+    "section": "Requirements & Specifications",
+    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust be steerable by user\nMust include a working brake\n\n\n\nSpecifications\n\nSafely Transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels\nAchieve a speed of at least 5 MPH for a 200 lb user"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Vehicle 1",
-    "section": "",
-    "text": "The project that our team will be working on is building a functional go-kart vehicle. Parts of the design that are in scope are the functional 4-wheel steering system, a brake, and a motorized power supply. Parts that are out of scope are the creation of a motor, no motion in reverse, or the inclusion of headlights, seatbelts, or airbags. Aerodynamics and designing for optimal weight distribution will also not be considered in the design process."
+    "objectID": "index.html#design-features-of-main-subsystems",
+    "href": "index.html#design-features-of-main-subsystems",
+    "title": "Shopping Kart Go Kart",
+    "section": "Design Features of Main Subsystems",
+    "text": "Design Features of Main Subsystems\nOur go kart consists of four critical subsystems: steerage, frame, braking, and motor. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake and motor subsytem allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.\nRead more about sub systems here"
   },
   {
-    "objectID": "index.html#abstract",
-    "href": "index.html#abstract",
-    "title": "Vehicle 1",
-    "section": "",
-    "text": "The project that our team will be working on is building a functional go-kart vehicle. Parts of the design that are in scope are the functional 4-wheel steering system, a brake, and a motorized power supply. Parts that are out of scope are the creation of a motor, no motion in reverse, or the inclusion of headlights, seatbelts, or airbags. Aerodynamics and designing for optimal weight distribution will also not be considered in the design process."
+    "objectID": "index.html#evaluation-of-design",
+    "href": "index.html#evaluation-of-design",
+    "title": "Shopping Kart Go Kart",
+    "section": "Evaluation of Design",
+    "text": "Evaluation of Design\nRead more about the evaluation of our design here"
   },
   {
-    "objectID": "index.html#about-us",
-    "href": "index.html#about-us",
-    "title": "Vehicle 1",
-    "section": "About Us",
-    "text": "About Us"
+    "objectID": "index.html#future-work",
+    "href": "index.html#future-work",
+    "title": "Shopping Kart Go Kart",
+    "section": "Future Work",
+    "text": "Future Work\n\nDuring the engineering process, there are"
+  },
+  {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "Shopping Kart Go Kart",
+    "section": "Conclusion",
+    "text": "Conclusion"
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "Vehicle 1",
+    "title": "Shopping Kart Go Kart",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nThank you Jacob, Drew, Prof Medelson, MACH"
-  },
-  {
-    "objectID": "reqnspecs.html",
-    "href": "reqnspecs.html",
-    "title": "Requirements and Specifications",
-    "section": "",
-    "text": "Requirements and Specifications (i.e., what does the design need to do?)"
+    "text": "Acknowledgements\nWe would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas."
   },
   {
     "objectID": "designfeatures.html",
     "href": "designfeatures.html",
     "title": "Design Features of Main Subsystems",
     "section": "",
-    "text": "Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?) This section must include at least two quantitative design decisions made via analysis described in the Evaluation of Design section."
+    "text": "The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions."
+  },
+  {
+    "objectID": "designfeatures.html#steerage-subsystem",
+    "href": "designfeatures.html#steerage-subsystem",
+    "title": "Design Features of Main Subsystems",
+    "section": "",
+    "text": "The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions."
+  },
+  {
+    "objectID": "designfeatures.html#frame-subsystem",
+    "href": "designfeatures.html#frame-subsystem",
+    "title": "Design Features of Main Subsystems",
+    "section": "Frame Subsystem",
+    "text": "Frame Subsystem\nThe frame is built with a shopping cart and 80/20"
+  },
+  {
+    "objectID": "designfeatures.html#braking-subsystem",
+    "href": "designfeatures.html#braking-subsystem",
+    "title": "Design Features of Main Subsystems",
+    "section": "Braking Subsystem",
+    "text": "Braking Subsystem\nThe braking system will involve a lever that will apply a normal force on the back wheel of the goKart when pulled down. The braking line will be applied to both of the wheels."
+  },
+  {
+    "objectID": "designfeatures.html#motor-subsystem",
+    "href": "designfeatures.html#motor-subsystem",
+    "title": "Design Features of Main Subsystems",
+    "section": "Motor Subsystem",
+    "text": "Motor Subsystem\nFor the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart."
   }
 ]
