@@ -5,6 +5,24 @@ author: "Vehicle 1"
 # date: "11/19/24"
 draft: false
 ---
-
-Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?)
+<!-- Design Features of Main Subsystems (show off your work! What are some significant design decisions you made?)
 This section must include at least two quantitative design decisions made via analysis described in the Evaluation of Design section.
+Identifies specific subsystems and/or features where significant work has been done by the team to advance the design. -->
+
+## Steerage Subsystem
+The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions. 
+
+## Frame Subsystem
+The frame is built with a shopping cart and 80/20
+
+## Braking Subsystem
+The braking system will involve a lever that will apply a normal force on the back wheel of the goKart when pulled down. The braking line will be applied to both of the wheels. 
+
+
+## Motor Subsystem
+For the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. 
+
+
+
+
+

@@ -1,8 +1,0 @@
----
-title: "Introduction and Project Background"
-description: "add later"
-author: "Vehicle 1"
-# date: "11/19/24"
-draft: false
----
-Introduction and Project Background

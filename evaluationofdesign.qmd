@@ -5,5 +5,7 @@ author: "Vehicle 1"
 # date: "11/19/24"
 draft: false
 ---
+<!-- Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)
+Thoroughly evaluates and justifies design decisions using hand calculations, computational tools (motion studies and FEA), or literature review -->
 
-Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)
+

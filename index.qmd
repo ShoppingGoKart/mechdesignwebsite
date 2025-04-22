@@ -1,30 +1,62 @@
 ---
-title: "Vehicle 1"
-# image: images/pariVo.jpeg
+title: "Shopping Kart Go Kart"
+# image: images/goKart.jpeg
 about:
     template: marquee
-    # links:
-    #     - icon: github
-    #       text: GitHub
-    #       href: https://github.com/vparizot/pariVo
 ---
 <!-- Templates: https://quarto.org/docs/websites/website-about.html -->
 
-## Abstract
-The project that our team will be working on is building a functional go-kart vehicle. Parts of the design that are in scope are the functional 4-wheel steering system, a brake, and a motorized power supply. Parts that are out of scope are the creation of a motor, no motion in reverse, or the inclusion of headlights, seatbelts, or airbags. Aerodynamics and designing for optimal weight distribution will also not be considered in the design process. 
+### A spring 2025 E177 Mechanical Design Final Project by Victoria Parizot, Ahlyssa Santillana, Alina Scholz, Sid Tchanyoum, Audrey Vo
+
+## Introduction and Project Background
+<!-- Introduction and Project Background: Provides clear and complete overview of the project -->
+The goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1/3 HP motot and includes functional steerage, breaking, and acceleration.
+
 
 <!-- 
 A demo of our final project is here:
 {{< video https://youtu.be/2ftOxwlH3vE>}} -->
 
-## About Us
+## Requirements & Specifications
+<!-- Requirements and Specifications (i.e., what does the design need to do?)
+Highlights and justifies clear quantitative and qualitative requirements and specifications for the design -->
+
+In order to make sure our go kart will work our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. A list of those details is below:
+
+### Requirements
+- Must be safe to use for user
+- Must be steerable by user
+- Must include a working brake
+
+### Specifications
+- Safely Transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph. 
+- Implement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly. 
+- Implement functional braking on the rear wheels 
+- Achieve a speed of at least 5 MPH for a 200 lb user
+
+
+## Design Features of Main Subsystems
+Our go kart consists of four critical subsystems: steerage, frame, braking, and motor. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake and motor subsytem allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.
+
+Read more about sub systems [here](designfeatures.qmd)
+
+## Evaluation of Design
+Read more about the evaluation of our design [here](evaluationofdesign.qmd)
+
+## Future Work
+<!-- Presents clear and specific directions for future work -->
+During the engineering process, there are 
+
+
+## Conclusion
+<!-- Clearly summarizes key takeaways from project and recommendations for future work -->
+
 
 ## Acknowledgements
-Thank you Jacob, Drew, Prof Medelson, MACH
-
-
+We would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas. 
+<!-- 
 # References
-We took inspiration from the following:
+We took inspiration from the following: -->
 
 <!-- [Brian Simpkins and Kevin Kim's Auto Audio Harmonizer](https://briansimpkins.github.io/E155_Final/) -->
 <!-- [STM32L4 DAC & DMA by Learning Embedded World](https://youtu.be/X9T0ZND_eZc?si=qwe-sAcXkT96tGlL) -->

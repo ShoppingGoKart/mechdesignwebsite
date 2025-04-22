@@ -7,18 +7,20 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: intro.qmd
-        text: Intro & Background
-      - href: reqnspecs.qmd
-        text: Requirements & Specs
+      # - href: intro.qmd
+      #   text: Intro & Background
+      # - href: reqnspecs.qmd
+      #   text: Requirements & Specs
       - href: designfeatures.qmd
-        text: Design Features of Main Subsystems
+        text: Subsystems Design Features 
       - href: evaluationofdesign.qmd
-        text: Evaluation of Design
-      - href: futurework.qmd
-        text: Future Work
-      - href: conclusions.qmd
-        text: Conclusions
+        text: Evaluation
+      - href: references.qmd
+        text: References
+      # - href: futurework.qmd
+      #   text: Future Work
+      # - href: conclusions.qmd
+      #   text: Conclusions
 
 format:
   html:
