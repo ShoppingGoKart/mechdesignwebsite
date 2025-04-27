@@ -10,7 +10,7 @@ about:
 
 ## Introduction and Project Background
 <!-- Introduction and Project Background: Provides clear and complete overview of the project -->
-The goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1/3 HP motot and includes functional steerage, breaking, and acceleration.
+The goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, breaking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle. 
 
 
 <!-- 
@@ -45,12 +45,12 @@ Read more about the evaluation of our design [here](evaluationofdesign.qmd)
 
 ## Future Work
 <!-- Presents clear and specific directions for future work -->
-During the engineering process, there are 
+During the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns. 
 
 
 ## Conclusion
 <!-- Clearly summarizes key takeaways from project and recommendations for future work -->
-
+Overall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph and 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle's movement with ease. We are excited about the outcome of our project, and look forward to riding it around Harvey Mudd's campus!
 
 ## Acknowledgements
 We would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas. 

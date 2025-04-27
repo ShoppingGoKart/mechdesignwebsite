@@ -20,7 +20,7 @@ The braking system will involve a lever that will apply a normal force on the ba
 
 
 ## Motor Subsystem
-For the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. 
+For the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. In order to obtain enough torque to move the entire vehicle and user, a gear ratio of 6.5 was used, where the driving sprocket has 10 teeth and the sprocket driving the back axle has 65 teeth. A 35 chain was used to connect the two sprockets, and kept at a pretension. The back axle consisted of a 5/8 inch shaft that connected the 26 tooth sprocket, two block bearings mounted to an aluminum plate, and the two back wheels. The aluminum plate's purpose is to mount the back axle system to the frame of the vehicle and also house the batteries. Keyhole slots and hose clamps were then used to fixture the sprockets and wheels in place so that they would rotate relative to the shaft.
 
 
 
