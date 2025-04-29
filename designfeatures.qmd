@@ -15,6 +15,7 @@ The go-kart will be steered by the front wheels, as shown by the red frame in th
 ## Frame Subsystem
 The frame is built with a shopping cart and 80/20
 
+
 ## Braking Subsystem
 The braking system will involve a lever that will apply a normal force on the back wheel of the goKart when pulled down. The braking line will be applied to both of the wheels. 
 
