@@ -7,18 +7,74 @@
     "text": "About this site"
   },
   {
+    "objectID": "evaluationofdesign.html",
+    "href": "evaluationofdesign.html",
+    "title": "Evaluation of Design",
+    "section": "",
+    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations\n\n\n\n\nWe can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.\nF1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.\n\n\n\nBack Shaft Force Calculations\n\n\nWe can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.\n\n\n\nShear Stress on Back Shaft Calculations\n\n\nCarbon steel has a tensile strength between 400-700 MPa, and the stress expected to act on our shaft is significantly less than that. Thus, our back shaft should be able to withstand the shear and torsional stress it undergoes.\n\n\n\nWe then wanted to determine the deflection and bending stress that the back axle experiences. We could simplify the system as a simply supported beam with 2 point loads (where the bearings attach to the frame of the vehicle). Since our entire vehicle is 300 pounds, we assumed that the back of the vehicle will hold roughly half of that weight (~150 pounds). Thus, each point load will hold about 75 pounds assuming an equal distribution across the shaft.\n\n\n\nMaximum Deflection of Back Shaft Calculations\n\n\nThe maximum deflection calculated located in the center of the shaft is 0.4 inches, which is greater than what we expected and saw in our system as it was performing.\nWe could find the maximum bending stress by finding the maximum moment.\n\n\n\nMaximum Bending Stress of Back Shaft Calculations\n\n\nThe bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load."
+  },
+  {
+    "objectID": "evaluationofdesign.html#overall-system-calculations",
+    "href": "evaluationofdesign.html#overall-system-calculations",
+    "title": "Evaluation of Design",
+    "section": "",
+    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations\n\n\n\n\nWe can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.\nF1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.\n\n\n\nBack Shaft Force Calculations\n\n\nWe can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.\n\n\n\nShear Stress on Back Shaft Calculations\n\n\nCarbon steel has a tensile strength between 400-700 MPa, and the stress expected to act on our shaft is significantly less than that. Thus, our back shaft should be able to withstand the shear and torsional stress it undergoes.\n\n\n\nWe then wanted to determine the deflection and bending stress that the back axle experiences. We could simplify the system as a simply supported beam with 2 point loads (where the bearings attach to the frame of the vehicle). Since our entire vehicle is 300 pounds, we assumed that the back of the vehicle will hold roughly half of that weight (~150 pounds). Thus, each point load will hold about 75 pounds assuming an equal distribution across the shaft.\n\n\n\nMaximum Deflection of Back Shaft Calculations\n\n\nThe maximum deflection calculated located in the center of the shaft is 0.4 inches, which is greater than what we expected and saw in our system as it was performing.\nWe could find the maximum bending stress by finding the maximum moment.\n\n\n\nMaximum Bending Stress of Back Shaft Calculations\n\n\nThe bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load."
+  },
+  {
+    "objectID": "evaluationofdesign.html#bearings-lifetime-evaluation",
+    "href": "evaluationofdesign.html#bearings-lifetime-evaluation",
+    "title": "Evaluation of Design",
+    "section": "Bearings Lifetime Evaluation",
+    "text": "Bearings Lifetime Evaluation\nIn order to find the lifetime of the back axle bearings, we can model the bearings as a simply supported theme with 2 point loads acting on the bearings from the weight of the vehicle similar to how we modeled the system to solve for bending stress.\nThis allows us to find the force of the bearings and the power outputted by the shaft.\n\n\n\nBack Shaft Bearings Force and Power Calculations\n\n\nThe power that the shaft outputs is 0.44 hp, which is within the capacity of our physical motor and seems reasonable to our expectations of its performance.\nWe can now find the lifetime of the bearings by using the values calculated above along with additional values found from the Block Bearing’s specification sheet.\n\n\n\nBack Shaft Bearings Lifetime Calculations\n\n\nThe lifetime of the bearings is 6.36 * 10^13, which is a very long lifetime for our vehicle. Thus, the bearings chosen are approrpriate for it use."
+  },
+  {
+    "objectID": "evaluationofdesign.html#chain-calculations",
+    "href": "evaluationofdesign.html#chain-calculations",
+    "title": "Evaluation of Design",
+    "section": "Chain Calculations",
+    "text": "Chain Calculations\nOur system uses a #35 chain to connect the sprocket, so we first had to determine the allowable horsepower of the chain and potential areas of failure. Thus, we first found the nominal power for a #35 single stranded chain.\n\n\n\nNominal power of link plated and roller limited chain calculations\n\n\nAfter our calculations, we determined that the link plated will break before the roller limited, so we will use the link plated value to determine the allowable horsepower.\n\n\n\nAllowable Horsepower Calculations"
+  },
+  {
+    "objectID": "evaluationofdesign.html#load-analysis-on-cart-and-frame-attachment",
+    "href": "evaluationofdesign.html#load-analysis-on-cart-and-frame-attachment",
+    "title": "Evaluation of Design",
+    "section": "Load Analysis on Cart and Frame Attachment",
+    "text": "Load Analysis on Cart and Frame Attachment"
+  },
+  {
+    "objectID": "evaluationofdesign.html#ziptie-analysis",
+    "href": "evaluationofdesign.html#ziptie-analysis",
+    "title": "Evaluation of Design",
+    "section": "Ziptie Analysis",
+    "text": "Ziptie Analysis\n\n\n\nZipTie Calculations"
+  },
+  {
+    "objectID": "evaluationofdesign.html#bending-stress-of-80-20",
+    "href": "evaluationofdesign.html#bending-stress-of-80-20",
+    "title": "Evaluation of Design",
+    "section": "Bending Stress of 80-20",
+    "text": "Bending Stress of 80-20"
+  },
+  {
+    "objectID": "evaluationofdesign.html#hose-clamp-analysis",
+    "href": "evaluationofdesign.html#hose-clamp-analysis",
+    "title": "Evaluation of Design",
+    "section": "Hose Clamp Analysis",
+    "text": "Hose Clamp Analysis\n\n\n\nHose Clamp Stress Calculations\n\n\nPICTURES: ASSUMPTIONS NUMBERS/CONCLUSIONS DISCUSSION ON RESULTS"
+  },
+  {
     "objectID": "index.html#introduction-and-project-background",
     "href": "index.html#introduction-and-project-background",
     "title": "Shopping Kart Go Kart",
     "section": "Introduction and Project Background",
-    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1/3 HP motot and includes functional steerage, breaking, and acceleration."
+    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, breaking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle."
   },
   {
     "objectID": "index.html#requirements-specifications",
     "href": "index.html#requirements-specifications",
     "title": "Shopping Kart Go Kart",
     "section": "Requirements & Specifications",
-    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust be steerable by user\nMust include a working brake\n\n\n\nSpecifications\n\nSafely Transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels\nAchieve a speed of at least 5 MPH for a 200 lb user"
+    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work, our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. These requirements and specifications assume that the user is within the weight constraint and all limbs are within the bounds of the cart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust include steering wheel and be steerable by user\nMust include a working brake\nMust be powered with motor\nMust include speed control\nMust be able to move a 200lb user\n\n\n\nSpecifications\n\nThe cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels"
   },
   {
     "objectID": "index.html#design-features-of-main-subsystems",
@@ -39,14 +95,14 @@
     "href": "index.html#future-work",
     "title": "Shopping Kart Go Kart",
     "section": "Future Work",
-    "text": "Future Work\n\nDuring the engineering process, there are"
+    "text": "Future Work\n\nDuring the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. We would also want to improve user comfort by using a larger shopping cart, and potentially including a seat. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns."
   },
   {
     "objectID": "index.html#conclusion",
     "href": "index.html#conclusion",
     "title": "Shopping Kart Go Kart",
     "section": "Conclusion",
-    "text": "Conclusion"
+    "text": "Conclusion\n\nOverall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph and 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease. Throughout this project, the team applied our analysis skills to evaluate our design, as well as gained technical skills in welding, machining, and CADing our design. The low-resolution prototypes and iterative design process was immensly helpful for motivating design decisions.\nWe are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!"
   },
   {
     "objectID": "index.html#acknowledgements",
@@ -88,6 +144,6 @@
     "href": "designfeatures.html#motor-subsystem",
     "title": "Design Features of Main Subsystems",
     "section": "Motor Subsystem",
-    "text": "Motor Subsystem\nFor the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart."
+    "text": "Motor Subsystem\nFor the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. In order to obtain enough torque to move the entire vehicle and user, a gear ratio of 6.5 was used, where the driving sprocket has 10 teeth and the sprocket driving the back axle has 65 teeth. A 35 chain was used to connect the two sprockets, and kept at a pretension. The back axle consisted of a 5/8 inch shaft that connected the 26 tooth sprocket, two block bearings mounted to an aluminum plate, and the two back wheels. The aluminum plate’s purpose is to mount the back axle system to the frame of the vehicle and also house the batteries. Keyhole slots and hose clamps were then used to fixture the sprockets and wheels in place so that they would rotate relative to the shaft."
   }
 ]
