@@ -1,15 +1,15 @@
 ---
 title: "Evaluation of Design"
-description: "The calculations and evaluations of our vehicle that justify and verify our design choices."
-author: "Vehicle 1"
+description: "The calculations and evaluations of our vehicle to justify and verify our design choices."
+# author: "Vehicle 1"
 # date: "11/19/24"
 draft: false
 ---
 <!-- Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)
 Thoroughly evaluates and justifies design decisions using hand calculations, computational tools (motion studies and FEA), or literature review -->
 
-## Overall System Calculations
-The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2. 
+## Motor & Gear Ratio Analysis
+The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of $1 m/s^2$. We assumed that the weight is evenly distributed among the four wheels.
 
 ![Desired torque and angular velocity calculations](images/overallsystem1.png) 
 
@@ -17,21 +17,21 @@ Because our desired torque output is much greater than what the motor actually o
 
 ![Gear ratio calculations](images/overallsystem2.png) 
 
-By using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.
+By using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels, giving us a 6.4 ratio.
 
 We could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.
 
 ![Power of System calculations](images/overallsystem3.png) 
 
-
+## Back Shaft Analysis
 ### Torsional Stress
 We can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain. 
 
-F1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.
+$F_1$ is tension, while $F_2$ is in slack due to how the chains are moving relative to each other. Thus, we can assume $F_2 = 0$, and solve for $F_1$ using the known torque value.
 
 ![Back Shaft Force Calculations](images/backaxle1.png) 
 
-We can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.
+We can now also find the shear stress acting on the back shaft and compare it to the tensile strength of the steel we are using.
 
 ![Shear Stress on Back Shaft Calculations](images/backaxle2.png) 
 
@@ -50,7 +50,7 @@ We could find the maximum bending stress by finding the maximum moment.
 
 The bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load.
 
-## Bearings Lifetime Evaluation
+### Bearings Lifetime Evaluation
 In order to find the lifetime of the back axle bearings, we can model the bearings as a simply supported theme with 2 point loads acting on the bearings from the weight of the vehicle similar to how we modeled the system to solve for bending stress. 
 
 This allows us to find the force of the bearings and the power outputted by the shaft.
@@ -63,10 +63,11 @@ We can now find the lifetime of the bearings by using the values calculated abov
 
 ![Back Shaft Bearings Lifetime Calculations](images/bearings2.png) 
 
-The lifetime of the bearings is 6.36 * 10^13, which is a very long lifetime for our vehicle. Thus, the bearings chosen are approrpriate for it use.
+The lifetime of the bearings is $6.36 * 10^{13}$, which is a very long lifetime for our vehicle. Thus, the bearings chosen are appropriate for it use.
 
+## Chain & Sprocket Analysis
 
-## Chain Calculations
+### Chain Calculations
 Our system uses a #35 chain to connect the sprocket, so we first had to determine the allowable horsepower of the chain and potential areas of failure. Thus, we first found the nominal power for a #35 single stranded chain.
 
 ![Nominal power of link plated and roller limited chain calculations](images/chaincalc1.png) 
@@ -75,22 +76,62 @@ After our calculations, we determined that the link plated will break before the
 
 ![Allowable Horsepower Calculations](images/chaincalc2.png) 
 
-## Load Analysis on Cart and Frame Attachment
+## Frame Analysis
+### Load Analysis on Cart and Frame Attachment
+![](images/alina1A.png)
 
-![Load Analysis on Cart and Frame Attachment](images/cartframeload1.png) 
-![Bolt Stress Calculations](images/cartframeload2.png) 
-![Bolt Stress Calculations](images/cartframeload3.png) 
-![ZipTie Frame Calculations](images/cartframeload4.png) 
+![](images/alina1B.png)
 
-## Ziptie Analysis
-![ZipTie Calculations](images/ziptiecalc.png) 
+![](images/alina1C.png)
 
-## Bending Stress of 80-20
-![Bending Stress of Frame Calculations](images/framebendingstress.png) 
-![80-20 Stress Calculations](images/hoseclamp.png) 
+### Ziptie Analysis
+![](images/alina1D.png)
+![](images/alina1E.png)
 
-## Hose Clamp Analysis
-![Hose Clamp Stress Calculations](images/hoseclampcalc.png) 
+### Bending Stress of 80-20 - Frame Loading Analysis
+![](images/alina1F.png)
+![](images/alina1G.png)
+
+### Frame attatchment to Back Axle (Hose Clamps)
+![](images/alina1H.png)
+![](images/alina1I.png)
+![](images/alina1J.png)
+
+## Hand Brake Analysis
+![](images/alina2A.png)
+![](images/alina2B.png)
+![](images/alina2C.png)
+
+
+## Front Axle Analysis
+
+### Front Axle Analysis on Bracket Holding Front Wheel
+![Analysis on bracket holding front wheel set up](images/vicanalysis1a.png)
+![Analysis on bracket holding front wheel calculations](images/vicanalysis1b.png)
+
+### Front Axle Analysis on weld
+![Analysis on Front Axle weld](images/vicanalysis2.png)
+
+## 80-20 Fastner Analysis
+### Assumptions & Worst Case Analysis
+![Assumptions](images/sid1a.png)
+![Dynamic loads considering speeds](images/sid1b.png)
+Static loads for this system include the weights of the cart, passenger, and motor.
+The dynamic loads consider speed and road obstacles. The system's dynamic loads include accelerating, braking, and impact of obstacles.
+
+
+### 80-20 Corner Bracket Analsis
+![](images/sid2a.png)
+![Bolt shear stress](images/sid2b.png)
+There are 4 corner brackets. Each bracket contains 2 screws and 2 T-nuts.
+This image shows the calculations that ensure the shear stress of each screw on the corner brackets does not exceed the tensile strength of the screws.
+
+
+### 80-20 Cross Bar Analysis
+![Cross bar connection](images/sid3a.png)
+![](images/sid3b.png)
+Analysis on each screw on the cross bar connections that ensures their shear stress does not exceed their tensile strength.
+
 
 PICTURES: 
 ASSUMPTIONS
