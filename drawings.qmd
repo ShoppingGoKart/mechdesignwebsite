@@ -38,8 +38,7 @@ We assembled our CAD to see how it all intersects.
 
 ![Cad Assembly Top View from Back](cadDrawings/assem6.png)
 
-
-
-
+## Bill of Material
+![Bill of Material](cadDrawings/BOM.png)
 
 
