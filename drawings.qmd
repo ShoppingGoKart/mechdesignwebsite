@@ -2,3 +2,24 @@
 title: "Drawings"
 description: ""
 ---
+
+Our design is a mix of store bought and machined parts. The CAD drawings for the machined parts are shown below.
+
+![Cad Drawing of Axle Hub](cadDrawings/AxleHubSS.png)
+
+![Cad Drawing of Back Axle Wheel Shaft](cadDrawings/BackAxleWheelShaftSS.png)
+
+![Cad Drawing of Back Plate](cadDrawings/BackPlateSS.png)
+
+![Cad Drawing of Brake Mount](cadDrawings/brakemountSS.png)
+
+![Cad Drawing of Brake Pad](cadDrawings/BrakePadSS.png)
+
+![Cad Drawing of Spindle](cadDrawings/SpindleSS.png)
+
+![Cad Drawing of Steering Arm](cadDrawings/SteeringArmSS.png)
+
+![Cad Drawing of Steering Column to Bearing Tube](cadDrawings/steeringColumnToBearingTubeSS.png)
+
+![Cad Drawing of Wheel Shaft Adapter](cadDrawings/wheelShaftAdapterSS.png)
+
