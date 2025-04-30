@@ -1,7 +1,8 @@
 ---
-title: "Drawings"
-description: ""
+title: "CAD"
+description: "SolidWorks Drawings and Assembly"
 ---
+## CAD Drawings
 
 Our design is a mix of store bought and machined parts. The CAD drawings for the machined parts are shown below.
 
@@ -15,11 +16,30 @@ Our design is a mix of store bought and machined parts. The CAD drawings for the
 
 ![Cad Drawing of Brake Pad](cadDrawings/BrakePadSS.png)
 
-![Cad Drawing of Spindle](cadDrawings/SpindleSS.png)
+![Cad Drawing of Spindle](cadDrawings/SpindleSS1.png)
 
 ![Cad Drawing of Steering Arm](cadDrawings/SteeringArmSS.png)
 
 ![Cad Drawing of Steering Column to Bearing Tube](cadDrawings/steeringColumnToBearingTubeSS.png)
 
 ![Cad Drawing of Wheel Shaft Adapter](cadDrawings/wheelShaftAdapterSS.png)
+
+## CAD Assembly
+We assembled our CAD to see how it all intersects. 
+![Cad Assembly of Entire Cart](cadDrawings/assem1.png)
+
+<!-- ![Cad Drawing of Wheel Shaft Adapter](cadDrawings/assem2.png) -->
+
+![Cad Assembly Front View](cadDrawings/assem3.png)
+
+![Cad Assembly of Side View](cadDrawings/assem4.png)
+
+![Cad Assembly Top View from Front](cadDrawings/assem5.png)
+
+![Cad Assembly Top View from Back](cadDrawings/assem6.png)
+
+
+
+
+
 

@@ -15,10 +15,10 @@ website:
         text: Subsystems Design Features 
       - href: evaluationofdesign.qmd
         text: Evaluation
-      - href: cad.qmd
-        text: CAD
+      # - href: cad.qmd
+      #   text: CAD
       - href: drawings.qmd
-        text: CAD Drawings
+        text: CAD
       - href: about.qmd
         text: About
 
