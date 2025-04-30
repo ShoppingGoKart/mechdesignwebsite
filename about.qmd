@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About the Team!!"
 ---
 
 ## Victoria Parizot
@@ -11,7 +11,7 @@ Audrey is an APISPAM Head Sponsor, Atwood Dorm President, and Machine Shop Proct
 Audrey is currently a resident of Southern California, and have lived here her entire life. If you have any recommendations of things to do in CA, please let her know! In her free time, she love to play pickleball, try new foods, and spend time with friends.
 
 ## Ahlyssa Santillana 
-
+Ahlyssa is a senior at Harvey Mudd with an interest in electronics and mechanical engineering and has had a great time in Mechanical Design. She has been able to participate in summer research with Prof Lape in her Nanocomposite Membrane Lab and Prof Krauss in his Tribology Lab. She is also a part of the Claremont Foxes Women's Rugby team! 
 
 ## Alina Scholz
 Alina is interested in systems and dynamics engineering, especially in aerospace and biomedical fields. She's a machine shop proctor, member of Tau Beta Pi honor society, and member of SWE! 

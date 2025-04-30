@@ -126,15 +126,11 @@ The dynamic loads consider speed and road obstacles. The system's dynamic loads 
 There are 4 corner brackets. Each bracket contains 2 screws and 2 T-nuts.
 This image shows the calculations that ensure the shear stress of each screw on the corner brackets does not exceed the tensile strength of the screws.
 
-
 ### 80-20 Cross Bar Analysis
 ![Cross bar connection](images/sid3a.png)
 ![](images/sid3b.png)
 Analysis on each screw on the cross bar connections that ensures their shear stress does not exceed their tensile strength.
 
-
-PICTURES: 
-ASSUMPTIONS
-NUMBERS/CONCLUSIONS
-DISCUSSION ON RESULTS
+## Efficiency Calculations
+![Efficiency Calculations of entire system](images/efficiency.png)
 
