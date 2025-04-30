@@ -42,53 +42,46 @@
     "text": "PWM Control\nTo give the user more control of the motor, the team used a Pulse-Width Modulation (PWM) Contoller. This controller uses a potentiometer to inform the duty cycle, reads the duty cycle in a form of a percentage on a seven-segment display, and includes a switch to turn on the motor, run the motor in reverse, and turn off the motor. PWM speed control works by driving the motor with a series of fast on and off pulses with variable duty cycle. The duty cycle informs the fraction of time the motor is on versus off, therby controlling the speed the motor with rotate.\nThe team opted for this design as it would require minimal electrical work to integrate with our system, allowing us to focus on the mechanical design of our system. Originally, we had thought to use a potentiometer as part of a voltage divider circuit between the battery and motor. However the large voltage would require a physically large (and expensive) potentiometer and the large current needs of the motor could not be met with a voltage divider. Thus, we switched to a more common solution for motor speed control – a PWM controller. The specific Contoller choosen is compatible with DC voltages between 10 to 55V and a maximum current of 60A. As we use 24V and have a current below the maximum, this controller is applicable for our design.\nWe are ultimately happy with the PWM control as it allows the user to control the speed and allows for the motor to run in reverse by inverting the voltage, which was one of our stretch goals. To ensure the safety of our design, we also integrated an E-STOP in our design that would cut the power to the motor when pressed. This E-STOP was wired in series between the battery and PWM Controller.\n\n\n\nPWM Interface Dashboard with E-Stop"
   },
   {
-    "objectID": "index.html#introduction-and-project-background",
-    "href": "index.html#introduction-and-project-background",
-    "title": "Shopping Kart Go Kart",
-    "section": "Introduction and Project Background",
-    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, braking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle.\nA demo of our final project is here:"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Team!!",
+    "section": "",
+    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
   },
   {
-    "objectID": "index.html#requirements-specifications",
-    "href": "index.html#requirements-specifications",
-    "title": "Shopping Kart Go Kart",
-    "section": "Requirements & Specifications",
-    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work, our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. These requirements and specifications assume that the user is within the weight constraint and all limbs are within the bounds of the cart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust include steering wheel and be steerable by user\nMust include a working brake\nMust be powered with motor\nMust include speed control\nMust be able to move user 5 MPH\nMust be able to move a 200lb user\n\n\n\nSpecifications\n\nThe cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 MPH.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels"
+    "objectID": "about.html#victoria-parizot",
+    "href": "about.html#victoria-parizot",
+    "title": "About the Team!!",
+    "section": "",
+    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
   },
   {
-    "objectID": "index.html#design-features-of-main-subsystems",
-    "href": "index.html#design-features-of-main-subsystems",
-    "title": "Shopping Kart Go Kart",
-    "section": "Design Features of Main Subsystems",
-    "text": "Design Features of Main Subsystems\nOur go kart consists of five critical subsystems: steerage, frame, braking, motor, and PWM control. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake subsystem allows the user to halt movement. The motor and PWM control subsytems allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.\nRead more about sub systems here"
+    "objectID": "about.html#audrey-vo",
+    "href": "about.html#audrey-vo",
+    "title": "About the Team!!",
+    "section": "Audrey Vo",
+    "text": "Audrey Vo\nAudrey is an APISPAM Head Sponsor, Atwood Dorm President, and Machine Shop Proctor at Harvey Mudd. The past few summers, she has been able to participate in summer research with Prof. Dodds in “Summer Start-Up” and with Prof. Gokli as part of the Riggs Fellowship. She was previously HMC 2025 Class President and also a member of the Prisoner Education Project.\nAudrey is currently a resident of Southern California, and have lived here her entire life. If you have any recommendations of things to do in CA, please let her know! In her free time, she love to play pickleball, try new foods, and spend time with friends."
   },
   {
-    "objectID": "index.html#evaluation-of-design",
-    "href": "index.html#evaluation-of-design",
-    "title": "Shopping Kart Go Kart",
-    "section": "Evaluation of Design",
-    "text": "Evaluation of Design\nTo motivate and verify our design decisions, a handful of analysis around each subsytem was performed. This allows us to ensure the use and safety of our design.\nRead more about the evaluation of our design here"
+    "objectID": "about.html#ahlyssa-santillana",
+    "href": "about.html#ahlyssa-santillana",
+    "title": "About the Team!!",
+    "section": "Ahlyssa Santillana",
+    "text": "Ahlyssa Santillana\nAhlyssa is a senior at Harvey Mudd with an interest in electronics and mechanical engineering and has had a great time in Mechanical Design. She has been able to participate in summer research with Prof Lape in her Nanocomposite Membrane Lab and Prof Krauss in his Tribology Lab. She is also a part of the Claremont Foxes Women’s Rugby team!"
   },
   {
-    "objectID": "index.html#future-work",
-    "href": "index.html#future-work",
-    "title": "Shopping Kart Go Kart",
-    "section": "Future Work",
-    "text": "Future Work\n\nDuring the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. We would also want to improve user comfort by using a larger shopping cart, and potentially including a seat. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns."
+    "objectID": "about.html#alina-scholz",
+    "href": "about.html#alina-scholz",
+    "title": "About the Team!!",
+    "section": "Alina Scholz",
+    "text": "Alina Scholz\nAlina is interested in systems and dynamics engineering, especially in aerospace and biomedical fields. She’s a machine shop proctor, member of Tau Beta Pi honor society, and member of SWE!"
   },
   {
-    "objectID": "index.html#conclusion",
-    "href": "index.html#conclusion",
-    "title": "Shopping Kart Go Kart",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nOverall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph with 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease.\nThroughout this project, the team grew comfortable with vehicle design – learning common ways go-karts implement steering and how to integrate an electrical design. Beyond experience with vehicle design, the team applied our analysis skills to evaluate our design, getting experience with comparing design options and identifying potential areas of failure. This includes throught exercises on material design, fastners, and chain and sprocket design. The team also gained technical skills – improving our machining skills and learning the MIG weld. The practice of CADing our entire system familiarized ourselves with a CAD workflow and more complex SolidWorks functionalities. Moreover, this project provided more experience in project management and practice in the iterative design process.\nIf we were to do this project again, there are a handful of changes we would make as detailed above. We would consider steel for the frame, use a larger shopping cart, and relook at steerage design. As we conclude our project we have a better idea of how all these subsystems work together. If we were to design another vehicle or mechanical project in the future, our experiences will be immensely helpful in the design process.\nWe are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!"
-  },
-  {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
-    "title": "Shopping Kart Go Kart",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nWe would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas."
+    "objectID": "about.html#sid-tchanyoum",
+    "href": "about.html#sid-tchanyoum",
+    "title": "About the Team!!",
+    "section": "Sid Tchanyoum",
+    "text": "Sid Tchanyoum\nSid is the NSBE Outreach Coordinator and BLAM Social Media Chair. She is interested in mechanical and acoustical engineering, and has really enjoyed being a part of both Prof Mendelson’s Mech Design and FILM Lab. She enjoys filmmaking, photography, and watching basketball."
   },
   {
     "objectID": "evaluationofdesign.html",
@@ -154,45 +147,66 @@
     "text": "Efficiency Calculations\n\n\n\nEfficiency Calculations of entire system"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About the Team!!",
+    "objectID": "drawings.html",
+    "href": "drawings.html",
+    "title": "Drawings",
     "section": "",
-    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
+    "text": "Our design is a mix of store bought and machined parts. The CAD drawings for the machined parts are shown below.\n\n\n\nCad Drawing of Axle Hub\n\n\n\n\n\nCad Drawing of Back Axle Wheel Shaft\n\n\n\n\n\nCad Drawing of Back Plate\n\n\n\n\n\nCad Drawing of Brake Mount\n\n\n\n\n\nCad Drawing of Brake Pad\n\n\n\n\n\nCad Drawing of Spindle\n\n\n\n\n\nCad Drawing of Steering Arm\n\n\n\n\n\nCad Drawing of Steering Column to Bearing Tube\n\n\n\n\n\nCad Drawing of Wheel Shaft Adapter"
   },
   {
-    "objectID": "about.html#victoria-parizot",
-    "href": "about.html#victoria-parizot",
-    "title": "About the Team!!",
+    "objectID": "index.html#introduction-and-project-background",
+    "href": "index.html#introduction-and-project-background",
+    "title": "Shopping Kart Go Kart",
+    "section": "Introduction and Project Background",
+    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, braking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle.\nA demo of our final project is here:"
+  },
+  {
+    "objectID": "index.html#requirements-specifications",
+    "href": "index.html#requirements-specifications",
+    "title": "Shopping Kart Go Kart",
+    "section": "Requirements & Specifications",
+    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work, our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. These requirements and specifications assume that the user is within the weight constraint and all limbs are within the bounds of the cart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust include steering wheel and be steerable by user\nMust include a working brake\nMust be powered with motor\nMust include speed control\nMust be able to move user 5 MPH\nMust be able to move a 200lb user\n\n\n\nSpecifications\n\nThe cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 MPH.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels"
+  },
+  {
+    "objectID": "index.html#design-features-of-main-subsystems",
+    "href": "index.html#design-features-of-main-subsystems",
+    "title": "Shopping Kart Go Kart",
+    "section": "Design Features of Main Subsystems",
+    "text": "Design Features of Main Subsystems\nOur go kart consists of five critical subsystems: steerage, frame, braking, motor, and PWM control. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake subsystem allows the user to halt movement. The motor and PWM control subsytems allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.\nRead more about sub systems here"
+  },
+  {
+    "objectID": "index.html#evaluation-of-design",
+    "href": "index.html#evaluation-of-design",
+    "title": "Shopping Kart Go Kart",
+    "section": "Evaluation of Design",
+    "text": "Evaluation of Design\nTo motivate and verify our design decisions, a handful of analysis around each subsytem was performed. This allows us to ensure the use and safety of our design.\nRead more about the evaluation of our design here"
+  },
+  {
+    "objectID": "index.html#future-work",
+    "href": "index.html#future-work",
+    "title": "Shopping Kart Go Kart",
+    "section": "Future Work",
+    "text": "Future Work\n\nDuring the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. We would also want to improve user comfort by using a larger shopping cart, and potentially including a seat. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns."
+  },
+  {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "Shopping Kart Go Kart",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nOverall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph with 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease.\nThroughout this project, the team grew comfortable with vehicle design – learning common ways go-karts implement steering and how to integrate an electrical design. Beyond experience with vehicle design, the team applied our analysis skills to evaluate our design, getting experience with comparing design options and identifying potential areas of failure. This includes throught exercises on material design, fastners, and chain and sprocket design. The team also gained technical skills – improving our machining skills and learning the MIG weld. The practice of CADing our entire system familiarized ourselves with a CAD workflow and more complex SolidWorks functionalities. Moreover, this project provided more experience in project management and practice in the iterative design process.\nIf we were to do this project again, there are a handful of changes we would make as detailed above. We would consider steel for the frame, use a larger shopping cart, and relook at steerage design. As we conclude our project we have a better idea of how all these subsystems work together. If we were to design another vehicle or mechanical project in the future, our experiences will be immensely helpful in the design process.\nWe are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Shopping Kart Go Kart",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas."
+  },
+  {
+    "objectID": "conclusions.html",
+    "href": "conclusions.html",
+    "title": "Conclusions",
     "section": "",
-    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
-  },
-  {
-    "objectID": "about.html#audrey-vo",
-    "href": "about.html#audrey-vo",
-    "title": "About the Team!!",
-    "section": "Audrey Vo",
-    "text": "Audrey Vo\nAudrey is an APISPAM Head Sponsor, Atwood Dorm President, and Machine Shop Proctor at Harvey Mudd. The past few summers, she has been able to participate in summer research with Prof. Dodds in “Summer Start-Up” and with Prof. Gokli as part of the Riggs Fellowship. She was previously HMC 2025 Class President and also a member of the Prisoner Education Project.\nAudrey is currently a resident of Southern California, and have lived here her entire life. If you have any recommendations of things to do in CA, please let her know! In her free time, she love to play pickleball, try new foods, and spend time with friends."
-  },
-  {
-    "objectID": "about.html#ahlyssa-santillana",
-    "href": "about.html#ahlyssa-santillana",
-    "title": "About the Team!!",
-    "section": "Ahlyssa Santillana",
-    "text": "Ahlyssa Santillana\nAhlyssa is a senior at Harvey Mudd with an interest in electronics and mechanical engineering and has had a great time in Mechanical Design. She has been able to participate in summer research with Prof Lape in her Nanocomposite Membrane Lab and Prof Krauss in his Tribology Lab. She is also a part of the Claremont Foxes Women’s Rugby team!"
-  },
-  {
-    "objectID": "about.html#alina-scholz",
-    "href": "about.html#alina-scholz",
-    "title": "About the Team!!",
-    "section": "Alina Scholz",
-    "text": "Alina Scholz\nAlina is interested in systems and dynamics engineering, especially in aerospace and biomedical fields. She’s a machine shop proctor, member of Tau Beta Pi honor society, and member of SWE!"
-  },
-  {
-    "objectID": "about.html#sid-tchanyoum",
-    "href": "about.html#sid-tchanyoum",
-    "title": "About the Team!!",
-    "section": "Sid Tchanyoum",
-    "text": "Sid Tchanyoum\nSid is the NSBE Outreach Coordinator and BLAM Social Media Chair. She is interested in mechanical and acoustical engineering, and has really enjoyed being a part of both Prof Mendelson’s Mech Design and FILM Lab. She enjoys filmmaking, photography, and watching basketball."
+    "text": "Conclusions"
   }
 ]
