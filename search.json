@@ -1,136 +1,24 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "evaluationofdesign.html",
-    "href": "evaluationofdesign.html",
-    "title": "Evaluation of Design",
-    "section": "",
-    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations\n\n\n\n\nWe can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.\nF1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.\n\n\n\nBack Shaft Force Calculations\n\n\nWe can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.\n\n\n\nShear Stress on Back Shaft Calculations\n\n\nCarbon steel has a tensile strength between 400-700 MPa, and the stress expected to act on our shaft is significantly less than that. Thus, our back shaft should be able to withstand the shear and torsional stress it undergoes.\n\n\n\nWe then wanted to determine the deflection and bending stress that the back axle experiences. We could simplify the system as a simply supported beam with 2 point loads (where the bearings attach to the frame of the vehicle). Since our entire vehicle is 300 pounds, we assumed that the back of the vehicle will hold roughly half of that weight (~150 pounds). Thus, each point load will hold about 75 pounds assuming an equal distribution across the shaft.\n\n\n\nMaximum Deflection of Back Shaft Calculations\n\n\nThe maximum deflection calculated located in the center of the shaft is 0.4 inches, which is greater than what we expected and saw in our system as it was performing.\nWe could find the maximum bending stress by finding the maximum moment.\n\n\n\nMaximum Bending Stress of Back Shaft Calculations\n\n\nThe bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load."
-  },
-  {
-    "objectID": "evaluationofdesign.html#overall-system-calculations",
-    "href": "evaluationofdesign.html#overall-system-calculations",
-    "title": "Evaluation of Design",
-    "section": "",
-    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations\n\n\n\n\nWe can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.\nF1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.\n\n\n\nBack Shaft Force Calculations\n\n\nWe can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.\n\n\n\nShear Stress on Back Shaft Calculations\n\n\nCarbon steel has a tensile strength between 400-700 MPa, and the stress expected to act on our shaft is significantly less than that. Thus, our back shaft should be able to withstand the shear and torsional stress it undergoes.\n\n\n\nWe then wanted to determine the deflection and bending stress that the back axle experiences. We could simplify the system as a simply supported beam with 2 point loads (where the bearings attach to the frame of the vehicle). Since our entire vehicle is 300 pounds, we assumed that the back of the vehicle will hold roughly half of that weight (~150 pounds). Thus, each point load will hold about 75 pounds assuming an equal distribution across the shaft.\n\n\n\nMaximum Deflection of Back Shaft Calculations\n\n\nThe maximum deflection calculated located in the center of the shaft is 0.4 inches, which is greater than what we expected and saw in our system as it was performing.\nWe could find the maximum bending stress by finding the maximum moment.\n\n\n\nMaximum Bending Stress of Back Shaft Calculations\n\n\nThe bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load."
-  },
-  {
-    "objectID": "evaluationofdesign.html#bearings-lifetime-evaluation",
-    "href": "evaluationofdesign.html#bearings-lifetime-evaluation",
-    "title": "Evaluation of Design",
-    "section": "Bearings Lifetime Evaluation",
-    "text": "Bearings Lifetime Evaluation\nIn order to find the lifetime of the back axle bearings, we can model the bearings as a simply supported theme with 2 point loads acting on the bearings from the weight of the vehicle similar to how we modeled the system to solve for bending stress.\nThis allows us to find the force of the bearings and the power outputted by the shaft.\n\n\n\nBack Shaft Bearings Force and Power Calculations\n\n\nThe power that the shaft outputs is 0.44 hp, which is within the capacity of our physical motor and seems reasonable to our expectations of its performance.\nWe can now find the lifetime of the bearings by using the values calculated above along with additional values found from the Block Bearing’s specification sheet.\n\n\n\nBack Shaft Bearings Lifetime Calculations\n\n\nThe lifetime of the bearings is 6.36 * 10^13, which is a very long lifetime for our vehicle. Thus, the bearings chosen are approrpriate for it use."
-  },
-  {
-    "objectID": "evaluationofdesign.html#chain-calculations",
-    "href": "evaluationofdesign.html#chain-calculations",
-    "title": "Evaluation of Design",
-    "section": "Chain Calculations",
-    "text": "Chain Calculations\nOur system uses a #35 chain to connect the sprocket, so we first had to determine the allowable horsepower of the chain and potential areas of failure. Thus, we first found the nominal power for a #35 single stranded chain.\n\n\n\nNominal power of link plated and roller limited chain calculations\n\n\nAfter our calculations, we determined that the link plated will break before the roller limited, so we will use the link plated value to determine the allowable horsepower.\n\n\n\nAllowable Horsepower Calculations"
-  },
-  {
-    "objectID": "evaluationofdesign.html#load-analysis-on-cart-and-frame-attachment",
-    "href": "evaluationofdesign.html#load-analysis-on-cart-and-frame-attachment",
-    "title": "Evaluation of Design",
-    "section": "Load Analysis on Cart and Frame Attachment",
-    "text": "Load Analysis on Cart and Frame Attachment"
-  },
-  {
-    "objectID": "evaluationofdesign.html#ziptie-analysis",
-    "href": "evaluationofdesign.html#ziptie-analysis",
-    "title": "Evaluation of Design",
-    "section": "Ziptie Analysis",
-    "text": "Ziptie Analysis\n\n\n\nZipTie Calculations"
-  },
-  {
-    "objectID": "evaluationofdesign.html#bending-stress-of-80-20",
-    "href": "evaluationofdesign.html#bending-stress-of-80-20",
-    "title": "Evaluation of Design",
-    "section": "Bending Stress of 80-20",
-    "text": "Bending Stress of 80-20"
-  },
-  {
-    "objectID": "evaluationofdesign.html#hose-clamp-analysis",
-    "href": "evaluationofdesign.html#hose-clamp-analysis",
-    "title": "Evaluation of Design",
-    "section": "Hose Clamp Analysis",
-    "text": "Hose Clamp Analysis\n\n\n\nHose Clamp Stress Calculations\n\n\nPICTURES: ASSUMPTIONS NUMBERS/CONCLUSIONS DISCUSSION ON RESULTS"
-  },
-  {
-    "objectID": "index.html#introduction-and-project-background",
-    "href": "index.html#introduction-and-project-background",
-    "title": "Shopping Kart Go Kart",
-    "section": "Introduction and Project Background",
-    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, breaking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle."
-  },
-  {
-    "objectID": "index.html#requirements-specifications",
-    "href": "index.html#requirements-specifications",
-    "title": "Shopping Kart Go Kart",
-    "section": "Requirements & Specifications",
-    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work, our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. These requirements and specifications assume that the user is within the weight constraint and all limbs are within the bounds of the cart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust include steering wheel and be steerable by user\nMust include a working brake\nMust be powered with motor\nMust include speed control\nMust be able to move a 200lb user\n\n\n\nSpecifications\n\nThe cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels"
-  },
-  {
-    "objectID": "index.html#design-features-of-main-subsystems",
-    "href": "index.html#design-features-of-main-subsystems",
-    "title": "Shopping Kart Go Kart",
-    "section": "Design Features of Main Subsystems",
-    "text": "Design Features of Main Subsystems\nOur go kart consists of four critical subsystems: steerage, frame, braking, and motor. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake and motor subsytem allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.\nRead more about sub systems here"
-  },
-  {
-    "objectID": "index.html#evaluation-of-design",
-    "href": "index.html#evaluation-of-design",
-    "title": "Shopping Kart Go Kart",
-    "section": "Evaluation of Design",
-    "text": "Evaluation of Design\nRead more about the evaluation of our design here"
-  },
-  {
-    "objectID": "index.html#future-work",
-    "href": "index.html#future-work",
-    "title": "Shopping Kart Go Kart",
-    "section": "Future Work",
-    "text": "Future Work\n\nDuring the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. We would also want to improve user comfort by using a larger shopping cart, and potentially including a seat. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns."
-  },
-  {
-    "objectID": "index.html#conclusion",
-    "href": "index.html#conclusion",
-    "title": "Shopping Kart Go Kart",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nOverall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph and 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease. Throughout this project, the team applied our analysis skills to evaluate our design, as well as gained technical skills in welding, machining, and CADing our design. The low-resolution prototypes and iterative design process was immensly helpful for motivating design decisions.\nWe are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!"
-  },
-  {
-    "objectID": "index.html#acknowledgements",
-    "href": "index.html#acknowledgements",
-    "title": "Shopping Kart Go Kart",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nWe would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas."
-  },
-  {
     "objectID": "designfeatures.html",
     "href": "designfeatures.html",
     "title": "Design Features of Main Subsystems",
     "section": "",
-    "text": "The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions."
+    "text": "The go-kart will be steered by the front wheels, using a Single Wheel Drive go-kart design. The user will rotate the steering wheel, which in turn will rotate the steering column welded to a lower bracket to make a Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The steering column lower bracket is then connected to tie rods and connected to the wheel spindles. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions.\n\n\n\nCompleted Steering Subsystem\n\n\nWe opted for this design due to cost, feasibility, and common practice. To minimize the cost, the team designed around the tie rods and steering wheel lent to us by MACH, machined shaft sleeves to use available, free bearings, and machined the spindles and stearing arm. The spindle bracket and kingpin bolt is from a wheel castor, and used to hold the spindle. The spindle itself if machined from 1018 Carbon steel [hammer head stock] and welded to a bolt to hold the wheel and a steel plate to connect to the tie rods. We also machined sleeves to adapt the bolt to the wheel hole and sleeved to make the XXX” diameter steering coloums to fit in the 0.75” diameter bearings.\n\n\n\nSpindle, Kingpin, and Castor Bracket Connected to Frame\n\n\nThe steering system involved multiple design decisions and iterations. For started, we wanted to ensure that we would not damage parts lent to us – meaning that we could not weld to the steering wheel, or cut the length of the pitman arms. This motivated frame and pitman arm design. We also decided to use two bearings to constrain the movement of the steering arm. Furthermore, human tests motivated the length of the pitman arm – originally, the arm was too long, and the steering wheel interfered with the space for the user. Finally, from preliminary testing, we noticed that slight imperfections in steering set up could lead to tilt within the wheels. To counteract this, the team employed a jack post between the wheels."
   },
   {
     "objectID": "designfeatures.html#steerage-subsystem",
     "href": "designfeatures.html#steerage-subsystem",
     "title": "Design Features of Main Subsystems",
     "section": "",
-    "text": "The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions."
+    "text": "The go-kart will be steered by the front wheels, using a Single Wheel Drive go-kart design. The user will rotate the steering wheel, which in turn will rotate the steering column welded to a lower bracket to make a Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The steering column lower bracket is then connected to tie rods and connected to the wheel spindles. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions.\n\n\n\nCompleted Steering Subsystem\n\n\nWe opted for this design due to cost, feasibility, and common practice. To minimize the cost, the team designed around the tie rods and steering wheel lent to us by MACH, machined shaft sleeves to use available, free bearings, and machined the spindles and stearing arm. The spindle bracket and kingpin bolt is from a wheel castor, and used to hold the spindle. The spindle itself if machined from 1018 Carbon steel [hammer head stock] and welded to a bolt to hold the wheel and a steel plate to connect to the tie rods. We also machined sleeves to adapt the bolt to the wheel hole and sleeved to make the XXX” diameter steering coloums to fit in the 0.75” diameter bearings.\n\n\n\nSpindle, Kingpin, and Castor Bracket Connected to Frame\n\n\nThe steering system involved multiple design decisions and iterations. For started, we wanted to ensure that we would not damage parts lent to us – meaning that we could not weld to the steering wheel, or cut the length of the pitman arms. This motivated frame and pitman arm design. We also decided to use two bearings to constrain the movement of the steering arm. Furthermore, human tests motivated the length of the pitman arm – originally, the arm was too long, and the steering wheel interfered with the space for the user. Finally, from preliminary testing, we noticed that slight imperfections in steering set up could lead to tilt within the wheels. To counteract this, the team employed a jack post between the wheels."
   },
   {
     "objectID": "designfeatures.html#frame-subsystem",
     "href": "designfeatures.html#frame-subsystem",
     "title": "Design Features of Main Subsystems",
     "section": "Frame Subsystem",
-    "text": "Frame Subsystem\nThe frame is built with a shopping cart and 80/20"
+    "text": "Frame Subsystem\nThe frame is built using a shopping cart and 80/20. The legs of the shopping cart was removed with an angle grinder, allowing the cart to be closer to the ground. This was desired as a lower center of mass improves stability (less chance of tipping over), handling, and safety. The back of the shopping cart was extended to improve user comfort. The shopping cart provided us a base to design the rest of the system around. The grid cart made it easy to attatch wiring, the 80/20, and steering bearing. Moreover, the cage around the user adds a level of safety.\n\n\n\nShopping cart before modifications\n\n\nOriginally, we had debated welding a steel frame for the go kart as this is what we had seen for most online DIY go kart builds. However, we opted to use an 80/20 base under the shopping cart due to its availability and modularity. An online blog showed the feasibility, and encouraged us to move foward with the analysis and design. Moreover, the team was able to acquire 80-20 from a scrapped clinic prototype. The modularity and availablity was helpful in the prototyping stage, allowing each subteam to easily visualize changes. Moreover, the modularity and fastening ability helped connect all subsystems together. We used two layers of 80/20 in the frame for added strength. The 80/20 frame was connected to the shopping cart with industrial stength zipties.\n\n\n\nCompleted Cart"
   },
   {
     "objectID": "designfeatures.html#braking-subsystem",
@@ -145,5 +33,159 @@
     "title": "Design Features of Main Subsystems",
     "section": "Motor Subsystem",
     "text": "Motor Subsystem\nFor the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. In order to obtain enough torque to move the entire vehicle and user, a gear ratio of 6.5 was used, where the driving sprocket has 10 teeth and the sprocket driving the back axle has 65 teeth. A 35 chain was used to connect the two sprockets, and kept at a pretension. The back axle consisted of a 5/8 inch shaft that connected the 26 tooth sprocket, two block bearings mounted to an aluminum plate, and the two back wheels. The aluminum plate’s purpose is to mount the back axle system to the frame of the vehicle and also house the batteries. Keyhole slots and hose clamps were then used to fixture the sprockets and wheels in place so that they would rotate relative to the shaft."
+  },
+  {
+    "objectID": "designfeatures.html#pwm-control",
+    "href": "designfeatures.html#pwm-control",
+    "title": "Design Features of Main Subsystems",
+    "section": "PWM Control",
+    "text": "PWM Control\nTo give the user more control of the motor, the team used a Pulse-Width Modulation (PWM) Contoller. This controller uses a potentiometer to inform the duty cycle, reads the duty cycle in a form of a percentage on a seven-segment display, and includes a switch to turn on the motor, run the motor in reverse, and turn off the motor. PWM speed control works by driving the motor with a series of fast on and off pulses with variable duty cycle. The duty cycle informs the fraction of time the motor is on versus off, therby controlling the speed the motor with rotate.\nThe team opted for this design as it would require minimal electrical work to integrate with our system, allowing us to focus on the mechanical design of our system. Originally, we had thought to use a potentiometer as part of a voltage divider circuit between the battery and motor. However the large voltage would require a physically large (and expensive) potentiometer and the large current needs of the motor could not be met with a voltage divider. Thus, we switched to a more common solution for motor speed control – a PWM controller. The specific Contoller choosen is compatible with DC voltages between 10 to 55V and a maximum current of 60A. As we use 24V and have a current below the maximum, this controller is applicable for our design.\nWe are ultimately happy with the PWM control as it allows the user to control the speed and allows for the motor to run in reverse by inverting the voltage, which was one of our stretch goals. To ensure the safety of our design, we also integrated an E-STOP in our design that would cut the power to the motor when pressed. This E-STOP was wired in series between the battery and PWM Controller."
+  },
+  {
+    "objectID": "index.html#introduction-and-project-background",
+    "href": "index.html#introduction-and-project-background",
+    "title": "Shopping Kart Go Kart",
+    "section": "Introduction and Project Background",
+    "text": "Introduction and Project Background\n\nThe goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, braking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle.\nA demo of our final project is here:"
+  },
+  {
+    "objectID": "index.html#requirements-specifications",
+    "href": "index.html#requirements-specifications",
+    "title": "Shopping Kart Go Kart",
+    "section": "Requirements & Specifications",
+    "text": "Requirements & Specifications\n\nIn order to make sure our go kart will work, our group defined a series of requirements and specifications. These requirements and specifications are motivated by safety and what we decided as critical in a functional go kart. These requirements and specifications assume that the user is within the weight constraint and all limbs are within the bounds of the cart. A list of those details is below:\n\nRequirements\n\nMust be safe to use for user\nMust include steering wheel and be steerable by user\nMust include a working brake\nMust be powered with motor\nMust include speed control\nMust be able to move user 5 MPH\nMust be able to move a 200lb user\n\n\n\nSpecifications\n\nThe cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 MPH.\nImplement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.\nImplement functional braking on the rear wheels"
+  },
+  {
+    "objectID": "index.html#design-features-of-main-subsystems",
+    "href": "index.html#design-features-of-main-subsystems",
+    "title": "Shopping Kart Go Kart",
+    "section": "Design Features of Main Subsystems",
+    "text": "Design Features of Main Subsystems\nOur go kart consists of five critical subsystems: steerage, frame, braking, motor, and PWM control. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake subsystem allows the user to halt movement. The motor and PWM control subsytems allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.\nRead more about sub systems here"
+  },
+  {
+    "objectID": "index.html#evaluation-of-design",
+    "href": "index.html#evaluation-of-design",
+    "title": "Shopping Kart Go Kart",
+    "section": "Evaluation of Design",
+    "text": "Evaluation of Design\nTo motivate and verify our design decisions, a handful of analysis around each subsytem was performed. This allows us to ensure the use and safety of our design.\nRead more about the evaluation of our design here"
+  },
+  {
+    "objectID": "index.html#future-work",
+    "href": "index.html#future-work",
+    "title": "Shopping Kart Go Kart",
+    "section": "Future Work",
+    "text": "Future Work\n\nDuring the engineering process, there were a few design decisions the team made due to budget and time constraints. In order to improve our current vehicle, we would want to improve the overall stability of the frame to support users of greater weight by replacing our 80-20 frame with steel. In addition, we would want to attempt to increase the speed of the vehicle by increasing the input voltage of the motor with higher voltage batteries. We would also want to improve user comfort by using a larger shopping cart, and potentially including a seat. Finally, in future iterations we would want to make the steering differential, which would allow the vehicle to adjust to speed changes as it is making turns."
+  },
+  {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "Shopping Kart Go Kart",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nOverall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph with 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease.\nThroughout this project, the team grew comfortable with vehicle design – learning common ways go-karts implement steering and how to integrate an electrical design. Beyond experience with vehicle design, the team applied our analysis skills to evaluate our design, getting experience with comparing design options and identifying potential areas of failure. This includes throught exercises on material design, fastners, and chain and sprocket design. The team also gained technical skills – improving our machining skills and learning the MIG weld. The practice of CADing our entire system familiarized ourselves with a CAD workflow and more complex SolidWorks functionalities. Moreover, this project provided more experience in project management and practice in the iterative design process.\nIf we were to do this project again, there are a handful of changes we would make as detailed above. We would consider steel for the frame, use a larger shopping cart, and relook at steerage design. As we conclude our project we have a better idea of how all these subsystems work together. If we were to design another vehicle or mechanical project in the future, our experiences will be immensely helpful in the design process.\nWe are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "Shopping Kart Go Kart",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas."
+  },
+  {
+    "objectID": "evaluationofdesign.html",
+    "href": "evaluationofdesign.html",
+    "title": "Evaluation of Design",
+    "section": "",
+    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of \\(1 m/s^2\\). We assumed that the weight is evenly distributed among the four wheels.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels, giving us a 6.4 ratio.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations"
+  },
+  {
+    "objectID": "evaluationofdesign.html#motor-gear-ratio-analysis",
+    "href": "evaluationofdesign.html#motor-gear-ratio-analysis",
+    "title": "Evaluation of Design",
+    "section": "",
+    "text": "The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of \\(1 m/s^2\\). We assumed that the weight is evenly distributed among the four wheels.\n\n\n\nDesired torque and angular velocity calculations\n\n\nBecause our desired torque output is much greater than what the motor actually outputs, we needed to determine the necessary gear ratio in order to increase the torque of the motor.\n\n\n\nGear ratio calculations\n\n\nBy using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels, giving us a 6.4 ratio.\nWe could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.\n\n\n\nPower of System calculations"
+  },
+  {
+    "objectID": "evaluationofdesign.html#back-shaft-analysis",
+    "href": "evaluationofdesign.html#back-shaft-analysis",
+    "title": "Evaluation of Design",
+    "section": "Back Shaft Analysis",
+    "text": "Back Shaft Analysis\n\nTorsional Stress\nWe can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.\n\\(F_1\\) is tension, while \\(F_2\\) is in slack due to how the chains are moving relative to each other. Thus, we can assume \\(F_2 = 0\\), and solve for \\(F_1\\) using the known torque value.\n\n\n\nBack Shaft Force Calculations\n\n\nWe can now also find the shear stress acting on the back shaft and compare it to the tensile strength of the steel we are using.\n\n\n\nShear Stress on Back Shaft Calculations\n\n\nCarbon steel has a tensile strength between 400-700 MPa, and the stress expected to act on our shaft is significantly less than that. Thus, our back shaft should be able to withstand the shear and torsional stress it undergoes.\n\n\nBending Stress and Deflection of Back Axle\nWe then wanted to determine the deflection and bending stress that the back axle experiences. We could simplify the system as a simply supported beam with 2 point loads (where the bearings attach to the frame of the vehicle). Since our entire vehicle is 300 pounds, we assumed that the back of the vehicle will hold roughly half of that weight (~150 pounds). Thus, each point load will hold about 75 pounds assuming an equal distribution across the shaft.\n\n\n\nMaximum Deflection of Back Shaft Calculations\n\n\nThe maximum deflection calculated located in the center of the shaft is 0.4 inches, which is greater than what we expected and saw in our system as it was performing.\nWe could find the maximum bending stress by finding the maximum moment.\n\n\n\nMaximum Bending Stress of Back Shaft Calculations\n\n\nThe bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load.\n\n\nBearings Lifetime Evaluation\nIn order to find the lifetime of the back axle bearings, we can model the bearings as a simply supported theme with 2 point loads acting on the bearings from the weight of the vehicle similar to how we modeled the system to solve for bending stress.\nThis allows us to find the force of the bearings and the power outputted by the shaft.\n\n\n\nBack Shaft Bearings Force and Power Calculations\n\n\nThe power that the shaft outputs is 0.44 hp, which is within the capacity of our physical motor and seems reasonable to our expectations of its performance.\nWe can now find the lifetime of the bearings by using the values calculated above along with additional values found from the Block Bearing’s specification sheet.\n\n\n\nBack Shaft Bearings Lifetime Calculations\n\n\nThe lifetime of the bearings is \\(6.36 * 10^{13}\\), which is a very long lifetime for our vehicle. Thus, the bearings chosen are appropriate for it use."
+  },
+  {
+    "objectID": "evaluationofdesign.html#chain-sprocket-analysis",
+    "href": "evaluationofdesign.html#chain-sprocket-analysis",
+    "title": "Evaluation of Design",
+    "section": "Chain & Sprocket Analysis",
+    "text": "Chain & Sprocket Analysis\n\nChain Calculations\nOur system uses a #35 chain to connect the sprocket, so we first had to determine the allowable horsepower of the chain and potential areas of failure. Thus, we first found the nominal power for a #35 single stranded chain.\n\n\n\nNominal power of link plated and roller limited chain calculations\n\n\nAfter our calculations, we determined that the link plated will break before the roller limited, so we will use the link plated value to determine the allowable horsepower.\n\n\n\nAllowable Horsepower Calculations"
+  },
+  {
+    "objectID": "evaluationofdesign.html#frame-analysis",
+    "href": "evaluationofdesign.html#frame-analysis",
+    "title": "Evaluation of Design",
+    "section": "Frame Analysis",
+    "text": "Frame Analysis\n\nLoad Analysis on Cart and Frame Attachment\n\n\n\n\n\nZiptie Analysis\n \n\n\nBending Stress of 80-20 - Frame Loading Analysis\n \n\n\nFrame attatchment to Back Axle (Hose Clamps)"
+  },
+  {
+    "objectID": "evaluationofdesign.html#hand-brake-analysis",
+    "href": "evaluationofdesign.html#hand-brake-analysis",
+    "title": "Evaluation of Design",
+    "section": "Hand Brake Analysis",
+    "text": "Hand Brake Analysis"
+  },
+  {
+    "objectID": "evaluationofdesign.html#front-axle-analysis",
+    "href": "evaluationofdesign.html#front-axle-analysis",
+    "title": "Evaluation of Design",
+    "section": "Front Axle Analysis",
+    "text": "Front Axle Analysis\n\nFront Axle Analysis on Bracket Holding Front Wheel\n \n\n\nFront Axle Analysis on weld\n\n\n\nAnalysis on Front Axle weld"
+  },
+  {
+    "objectID": "evaluationofdesign.html#fastner-analysis",
+    "href": "evaluationofdesign.html#fastner-analysis",
+    "title": "Evaluation of Design",
+    "section": "80-20 Fastner Analysis",
+    "text": "80-20 Fastner Analysis\n\nAssumptions & Worst Case Analysis\n  Static loads for this system include the weights of the cart, passenger, and motor. The dynamic loads consider speed and road obstacles. The system’s dynamic loads include accelerating, braking, and impact of obstacles.\n\n\n80-20 Corner Bracket Analsis\n  There are 4 corner brackets. Each bracket contains 2 screws and 2 T-nuts. This image shows the calculations that ensure the shear stress of each screw on the corner brackets does not exceed the tensile strength of the screws.\n\n\n80-20 Cross Bar Analysis\n  Analysis on each screw on the cross bar connections that ensures their shear stress does not exceed their tensile strength.\nPICTURES: ASSUMPTIONS NUMBERS/CONCLUSIONS DISCUSSION ON RESULTS"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
+  },
+  {
+    "objectID": "about.html#victoria-parizot",
+    "href": "about.html#victoria-parizot",
+    "title": "About",
+    "section": "",
+    "text": "Victoria Parizot is interested with mechanical and electrical design, and excited to be taking Mech Design this semester! At Harvey Mudd, she is a West Dorm President, a Machine Shop Proctor, and a Member of the Tau Beta Pi Honors Society. In her free time, she enjoys woodworking, taking and developing film photos, and sailing."
+  },
+  {
+    "objectID": "about.html#audrey-vo",
+    "href": "about.html#audrey-vo",
+    "title": "About",
+    "section": "Audrey Vo",
+    "text": "Audrey Vo\nAudrey is an APISPAM Head Sponsor, Atwood Dorm President, and Machine Shop Proctor at Harvey Mudd. The past few summers, she has been able to participate in summer research with Prof. Dodds in “Summer Start-Up” and with Prof. Gokli as part of the Riggs Fellowship. She was previously HMC 2025 Class President and also a member of the Prisoner Education Project.\nAudrey is currently a resident of Southern California, and have lived here her entire life. If you have any recommendations of things to do in CA, please let her know! In her free time, she love to play pickleball, try new foods, and spend time with friends."
+  },
+  {
+    "objectID": "about.html#ahlyssa-santillana",
+    "href": "about.html#ahlyssa-santillana",
+    "title": "About",
+    "section": "Ahlyssa Santillana",
+    "text": "Ahlyssa Santillana"
+  },
+  {
+    "objectID": "about.html#alina-scholz",
+    "href": "about.html#alina-scholz",
+    "title": "About",
+    "section": "Alina Scholz",
+    "text": "Alina Scholz\nAlina is interested in systems and dynamics engineering, especially in aerospace and biomedical fields. She’s a machine shop proctor, member of Tau Beta Pi honor society, and member of SWE!"
+  },
+  {
+    "objectID": "about.html#sid-tchanyoum",
+    "href": "about.html#sid-tchanyoum",
+    "title": "About",
+    "section": "Sid Tchanyoum",
+    "text": "Sid Tchanyoum\nSid is the NSBE Outreach Coordinator and BLAM Social Media Chair. She is interested in mechanical and acoustical engineering, and has really enjoyed being a part of both Prof Mendelson’s Mech Design and FILM Lab. She enjoys filmmaking, photography, and watching basketball."
   }
 ]

@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/references.html</loc>
-    <lastmod>2025-04-22T00:12:10.787Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/about.html</loc>
-    <lastmod>2025-04-21T19:50:55.329Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/evaluationofdesign.html</loc>
-    <lastmod>2025-04-27T03:02:02.189Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/index.html</loc>
-    <lastmod>2025-04-28T21:20:06.782Z</lastmod>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/cad.html</loc>
+    <lastmod>2025-04-30T02:46:20.098Z</lastmod>
   </url>
   <url>
     <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/designfeatures.html</loc>
-    <lastmod>2025-04-29T02:40:49.522Z</lastmod>
+    <lastmod>2025-04-30T02:44:04.695Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/index.html</loc>
+    <lastmod>2025-04-30T02:43:45.973Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/drawings.html</loc>
+    <lastmod>2025-04-30T02:46:20.515Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/evaluationofdesign.html</loc>
+    <lastmod>2025-04-30T06:21:43.404Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/about.html</loc>
+    <lastmod>2025-04-30T06:30:34.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mechdesignwebsite.github.io/mechdesignwebsite/references.html</loc>
+    <lastmod>2025-04-22T00:12:10.787Z</lastmod>
   </url>
 </urlset>

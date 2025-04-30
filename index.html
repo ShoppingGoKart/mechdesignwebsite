@@ -100,8 +100,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Evaluation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./references.html"> 
-<span class="menu-text">References</span></a>
+    <a class="nav-link" href="./cad.html"> 
+<span class="menu-text">CAD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./drawings.html"> 
+<span class="menu-text">CAD Drawings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -118,8 +126,7 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo" id="toc-a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo" class="nav-link active" data-scroll-target="#a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo">A spring 2025 E177 Mechanical Design Final Project by Victoria Parizot, Ahlyssa Santillana, Alina Scholz, Sid Tchanyoum, Audrey Vo</a></li>
-  <li><a href="#introduction-and-project-background" id="toc-introduction-and-project-background" class="nav-link" data-scroll-target="#introduction-and-project-background">Introduction and Project Background</a></li>
+  <li><a href="#introduction-and-project-background" id="toc-introduction-and-project-background" class="nav-link active" data-scroll-target="#introduction-and-project-background">Introduction and Project Background</a></li>
   <li><a href="#requirements-specifications" id="toc-requirements-specifications" class="nav-link" data-scroll-target="#requirements-specifications">Requirements &amp; Specifications</a>
   <ul class="collapse">
   <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
@@ -147,16 +154,14 @@ ul.task-list li input[type="checkbox"] {
 </header> <main class="content" id="quarto-document-content">
 
 <!-- Templates: https://quarto.org/docs/websites/website-about.html -->
-<section id="a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo" class="level3">
-<h3 data-anchor-id="a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo">A spring 2025 E177 Mechanical Design Final Project by Victoria Parizot, Ahlyssa Santillana, Alina Scholz, Sid Tchanyoum, Audrey Vo</h3>
+<section id="a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo" class="level4">
+<h4 data-anchor-id="a-spring-2025-e177-mechanical-design-final-project-by-victoria-parizot-ahlyssa-santillana-alina-scholz-sid-tchanyoum-audrey-vo">A spring 2025 E177 Mechanical Design Final Project by Victoria Parizot, Ahlyssa Santillana, Alina Scholz, Sid Tchanyoum, Audrey Vo</h4>
 </section>
 <section id="introduction-and-project-background" class="level2">
 <h2 data-anchor-id="introduction-and-project-background">Introduction and Project Background</h2>
 <!-- Introduction and Project Background: Provides clear and complete overview of the project -->
-<p>The goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, breaking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle.</p>
-<!-- 
-A demo of our final project is here:
- -->
+<p>The goal for this project is to create a functional go-kart vehicle. The Ferrari GK is a go-kart built around a shopping cart frame and a 1 HP motor and includes functional steerage, braking, and acceleration. The acceleration and direction that the vehicle propels is controlled by a PWM controller, and is powered by two 12V car batteries. An emergency stop function is also included in order to improve the safety of the vehicle.</p>
+<p>A demo of our final project is here: </p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/s2t5OHpjwbU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
 </section>
 <section id="requirements-specifications" class="level2">
 <h2 data-anchor-id="requirements-specifications">Requirements &amp; Specifications</h2>
@@ -171,13 +176,14 @@ Highlights and justifies clear quantitative and qualitative requirements and spe
 <li>Must include a working brake</li>
 <li>Must be powered with motor</li>
 <li>Must include speed control</li>
+<li>Must be able to move user 5 MPH</li>
 <li>Must be able to move a 200lb user</li>
 </ul>
 </section>
 <section id="specifications" class="level3">
 <h3 data-anchor-id="specifications">Specifications</h3>
 <ul>
-<li>The cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 mph.</li>
+<li>The cart must be able to safely transport a user of 200lbs at least 10 ft, with the ability to accelerate at 1m/s^2 up to 5 MPH.</li>
 <li>Implement functional steerage, controlled by a steering wheel, on the front wheels with a spindle assembly.</li>
 <li>Implement functional braking on the rear wheels <!-- - Achieve a speed of at least 5 MPH for a 200 lb user --></li>
 </ul>
@@ -185,11 +191,12 @@ Highlights and justifies clear quantitative and qualitative requirements and spe
 </section>
 <section id="design-features-of-main-subsystems" class="level2">
 <h2 data-anchor-id="design-features-of-main-subsystems">Design Features of Main Subsystems</h2>
-<p>Our go kart consists of four critical subsystems: steerage, frame, braking, and motor. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake and motor subsytem allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.</p>
+<p>Our go kart consists of five critical subsystems: steerage, frame, braking, motor, and PWM control. These subsystems are critical in allowing the user to control the go kart. The steerage subsystem allows the users to control the direction of the vehicle. The brake subsystem allows the user to halt movement. The motor and PWM control subsytems allows the user to contol their speed. The frame is critical in holding the user, and combining all the other subsystems.</p>
 <p>Read more about sub systems <a href="./designfeatures.html">here</a></p>
 </section>
 <section id="evaluation-of-design" class="level2">
 <h2 data-anchor-id="evaluation-of-design">Evaluation of Design</h2>
+<p>To motivate and verify our design decisions, a handful of analysis around each subsytem was performed. This allows us to ensure the use and safety of our design.</p>
 <p>Read more about the evaluation of our design <a href="./evaluationofdesign.html">here</a></p>
 </section>
 <section id="future-work" class="level2">
@@ -200,18 +207,14 @@ Highlights and justifies clear quantitative and qualitative requirements and spe
 <section id="conclusion" class="level2">
 <h2 data-anchor-id="conclusion">Conclusion</h2>
 <!-- Clearly summarizes key takeaways from project and recommendations for future work -->
-<p>Overall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph and 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease. Throughout this project, the team applied our analysis skills to evaluate our design, as well as gained technical skills in welding, machining, and CADing our design. The low-resolution prototypes and iterative design process was immensly helpful for motivating design decisions.</p>
+<p>Overall, our team was able to succesfully build a vehicle that can safely transport a 200 pound user up to 5mph with 1 m/s^2 of acceleration. In addition, the vehicle contains a functional steering system and speed control that allows the user to moderate the vehicle’s movement with ease.</p>
+<p>Throughout this project, the team grew comfortable with vehicle design – learning common ways go-karts implement steering and how to integrate an electrical design. Beyond experience with vehicle design, the team applied our analysis skills to evaluate our design, getting experience with comparing design options and identifying potential areas of failure. This includes throught exercises on material design, fastners, and chain and sprocket design. The team also gained technical skills – improving our machining skills and learning the MIG weld. The practice of CADing our entire system familiarized ourselves with a CAD workflow and more complex SolidWorks functionalities. Moreover, this project provided more experience in project management and practice in the iterative design process.</p>
+<p>If we were to do this project again, there are a handful of changes we would make as detailed above. We would consider steel for the frame, use a larger shopping cart, and relook at steerage design. As we conclude our project we have a better idea of how all these subsystems work together. If we were to design another vehicle or mechanical project in the future, our experiences will be immensely helpful in the design process.</p>
 <p>We are excited about the outcome of our project, and look forward to riding it around Harvey Mudd’s campus!</p>
-<!-- Overall building the lathe was an incredibly fun and informative project. We had the opportunity to apply many of the analysis skills we learned about in mechanical design and the machine shop, as well as learn more in-depth analysis, part selection, machining, and project management skills. We had to apply fatigue, bolt, gear, and pulley analysis over the course of our project. We also had to learn how to do power analysis to compare our lathe with commercial products.  We also had the opportunity to learn CNC turning to make our pulley and members of the group made a keyway and keyseat successfully. Finally, we learned some important estimation skills that saved us a lot of time for analysis. We calculated the stresses and factors of safety for the worst loading cases so that we could verify the structural integrity of our parts without needing to do a more complex analysis.  -->
-<!-- If we were to do the project again, there are a handful of details we would change. As mentioned earlier, it would have been nice if we had purchased a longer belt and a more rigid tailstock (although we were unsure of our budget constraints at the time). We also would have chosen to use a slightly smaller shaft for our spindle. Ultimately, we were constrained by the threaded feature on the chuck, but we still could have used a 0.75" aluminum shaft instead of a 1" aluminum shaft. We realized after purchasing our shaft that our initial fatigue analysis was incorrect and that a 0.75" shaft would have had a sufficient factor of safety.  -->
 </section>
 <section id="acknowledgements" class="level2">
 <h2 data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>We would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas. <!-- 
-# References
-We took inspiration from the following: --></p>
-<!-- [Brian Simpkins and Kevin Kim's Auto Audio Harmonizer](https://briansimpkins.github.io/E155_Final/) -->
-<!-- [STM32L4 DAC & DMA by Learning Embedded World](https://youtu.be/X9T0ZND_eZc?si=qwe-sAcXkT96tGlL) -->
+<p>We would like to thank Professor Mendleson and Drew Price for their help and guidance throughout the project. We would also like to thank Jacob, Xavier, Lynn, and MACH for their help acquiring materials and implementing ideas.</p>
 
 
 </section>

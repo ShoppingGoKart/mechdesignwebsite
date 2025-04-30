@@ -6,8 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Vehicle 1">
-<meta name="description" content="The calculations and evaluations of our vehicle that justify and verify our design choices.">
+<meta name="description" content="The calculations and evaluations of our vehicle to justify and verify our design choices.">
 
 <title>Evaluation of Design – Ferrari GK</title>
 <style>
@@ -69,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -103,8 +131,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Evaluation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./references.html"> 
-<span class="menu-text">References</span></a>
+    <a class="nav-link" href="./cad.html"> 
+<span class="menu-text">CAD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./drawings.html"> 
+<span class="menu-text">CAD Drawings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -122,17 +158,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overall-system-calculations" id="toc-overall-system-calculations" class="nav-link active" data-scroll-target="#overall-system-calculations">Overall System Calculations</a>
+  <li><a href="#motor-gear-ratio-analysis" id="toc-motor-gear-ratio-analysis" class="nav-link active" data-scroll-target="#motor-gear-ratio-analysis">Motor &amp; Gear Ratio Analysis</a></li>
+  <li><a href="#back-shaft-analysis" id="toc-back-shaft-analysis" class="nav-link" data-scroll-target="#back-shaft-analysis">Back Shaft Analysis</a>
   <ul class="collapse">
   <li><a href="#torsional-stress" id="toc-torsional-stress" class="nav-link" data-scroll-target="#torsional-stress">Torsional Stress</a></li>
   <li><a href="#bending-stress-and-deflection-of-back-axle" id="toc-bending-stress-and-deflection-of-back-axle" class="nav-link" data-scroll-target="#bending-stress-and-deflection-of-back-axle">Bending Stress and Deflection of Back Axle</a></li>
-  </ul></li>
   <li><a href="#bearings-lifetime-evaluation" id="toc-bearings-lifetime-evaluation" class="nav-link" data-scroll-target="#bearings-lifetime-evaluation">Bearings Lifetime Evaluation</a></li>
+  </ul></li>
+  <li><a href="#chain-sprocket-analysis" id="toc-chain-sprocket-analysis" class="nav-link" data-scroll-target="#chain-sprocket-analysis">Chain &amp; Sprocket Analysis</a>
+  <ul class="collapse">
   <li><a href="#chain-calculations" id="toc-chain-calculations" class="nav-link" data-scroll-target="#chain-calculations">Chain Calculations</a></li>
+  </ul></li>
+  <li><a href="#frame-analysis" id="toc-frame-analysis" class="nav-link" data-scroll-target="#frame-analysis">Frame Analysis</a>
+  <ul class="collapse">
   <li><a href="#load-analysis-on-cart-and-frame-attachment" id="toc-load-analysis-on-cart-and-frame-attachment" class="nav-link" data-scroll-target="#load-analysis-on-cart-and-frame-attachment">Load Analysis on Cart and Frame Attachment</a></li>
   <li><a href="#ziptie-analysis" id="toc-ziptie-analysis" class="nav-link" data-scroll-target="#ziptie-analysis">Ziptie Analysis</a></li>
-  <li><a href="#bending-stress-of-80-20" id="toc-bending-stress-of-80-20" class="nav-link" data-scroll-target="#bending-stress-of-80-20">Bending Stress of 80-20</a></li>
-  <li><a href="#hose-clamp-analysis" id="toc-hose-clamp-analysis" class="nav-link" data-scroll-target="#hose-clamp-analysis">Hose Clamp Analysis</a></li>
+  <li><a href="#bending-stress-of-80-20---frame-loading-analysis" id="toc-bending-stress-of-80-20---frame-loading-analysis" class="nav-link" data-scroll-target="#bending-stress-of-80-20---frame-loading-analysis">Bending Stress of 80-20 - Frame Loading Analysis</a></li>
+  <li><a href="#frame-attatchment-to-back-axle-hose-clamps" id="toc-frame-attatchment-to-back-axle-hose-clamps" class="nav-link" data-scroll-target="#frame-attatchment-to-back-axle-hose-clamps">Frame attatchment to Back Axle (Hose Clamps)</a></li>
+  </ul></li>
+  <li><a href="#hand-brake-analysis" id="toc-hand-brake-analysis" class="nav-link" data-scroll-target="#hand-brake-analysis">Hand Brake Analysis</a></li>
+  <li><a href="#front-axle-analysis" id="toc-front-axle-analysis" class="nav-link" data-scroll-target="#front-axle-analysis">Front Axle Analysis</a>
+  <ul class="collapse">
+  <li><a href="#front-axle-analysis-on-bracket-holding-front-wheel" id="toc-front-axle-analysis-on-bracket-holding-front-wheel" class="nav-link" data-scroll-target="#front-axle-analysis-on-bracket-holding-front-wheel">Front Axle Analysis on Bracket Holding Front Wheel</a></li>
+  <li><a href="#front-axle-analysis-on-weld" id="toc-front-axle-analysis-on-weld" class="nav-link" data-scroll-target="#front-axle-analysis-on-weld">Front Axle Analysis on weld</a></li>
+  </ul></li>
+  <li><a href="#fastner-analysis" id="toc-fastner-analysis" class="nav-link" data-scroll-target="#fastner-analysis">80-20 Fastner Analysis</a>
+  <ul class="collapse">
+  <li><a href="#assumptions-worst-case-analysis" id="toc-assumptions-worst-case-analysis" class="nav-link" data-scroll-target="#assumptions-worst-case-analysis">Assumptions &amp; Worst Case Analysis</a></li>
+  <li><a href="#corner-bracket-analsis" id="toc-corner-bracket-analsis" class="nav-link" data-scroll-target="#corner-bracket-analsis">80-20 Corner Bracket Analsis</a></li>
+  <li><a href="#cross-bar-analysis" id="toc-cross-bar-analysis" class="nav-link" data-scroll-target="#cross-bar-analysis">80-20 Cross Bar Analysis</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -146,19 +201,13 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    The calculations and evaluations of our vehicle that justify and verify our design choices.
+    The calculations and evaluations of our vehicle to justify and verify our design choices.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vehicle 1 </p>
-          </div>
-  </div>
     
   
     
@@ -171,9 +220,9 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- Evaluation of Design (may include hand calculations, FEA, motion studies, literature review, and testing results)
 Thoroughly evaluates and justifies design decisions using hand calculations, computational tools (motion studies and FEA), or literature review -->
-<section id="overall-system-calculations" class="level2">
-<h2 class="anchored" data-anchor-id="overall-system-calculations">Overall System Calculations</h2>
-<p>The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of 1 m/s^2.</p>
+<section id="motor-gear-ratio-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="motor-gear-ratio-analysis">Motor &amp; Gear Ratio Analysis</h2>
+<p>The calculations below show how we solved for the desired torque and speed of the system, assuming that our entire system weighs 300 pounds and we want a speed of at least 5mph and acceleration of <span class="math inline">\(1 m/s^2\)</span>. We assumed that the weight is evenly distributed among the four wheels.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/overallsystem1.png" class="img-fluid figure-img"></p>
@@ -187,7 +236,7 @@ Thoroughly evaluates and justifies design decisions using hand calculations, com
 <figcaption>Gear ratio calculations</figcaption>
 </figure>
 </div>
-<p>By using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels.</p>
+<p>By using the motor RPM and torque chart, we were able to determine that we would need a 6.31 gear ratio in order to reach the desired torque. Thus, we implemented two sprockets for our back axle, where the driving axle has a 10 tooth sprocket transmitting power to a 65 tooth sprocket connected to the wheels, giving us a 6.4 ratio.</p>
 <p>We could also determine the expected power output to be 0.43 hp by using the angular velocity and torque.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -195,17 +244,20 @@ Thoroughly evaluates and justifies design decisions using hand calculations, com
 <figcaption>Power of System calculations</figcaption>
 </figure>
 </div>
+</section>
+<section id="back-shaft-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="back-shaft-analysis">Back Shaft Analysis</h2>
 <section id="torsional-stress" class="level3">
 <h3 class="anchored" data-anchor-id="torsional-stress">Torsional Stress</h3>
 <p>We can first draw a FBD of the torsional stresses acting on the shaft due to the tension of the chain acting on the sprocket. From our calculations above, we know that the torque is expected to be 13.25 lb-ft due to the gear ratio implemented. Thus, we need to find the 2 forces acting on the sprocket due to the chain.</p>
-<p>F1 is tension, while F2 is in slack due to how the chains are moving relative to each other. Thus, we can assume F2 = 0, and solve for F1 using the known torque value.</p>
+<p><span class="math inline">\(F_1\)</span> is tension, while <span class="math inline">\(F_2\)</span> is in slack due to how the chains are moving relative to each other. Thus, we can assume <span class="math inline">\(F_2 = 0\)</span>, and solve for <span class="math inline">\(F_1\)</span> using the known torque value.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/backaxle1.png" class="img-fluid figure-img"></p>
 <figcaption>Back Shaft Force Calculations</figcaption>
 </figure>
 </div>
-<p>We can now also find the shear stress acting on the back shaft and compare it to teh tensile strength of the steel we are using.</p>
+<p>We can now also find the shear stress acting on the back shaft and compare it to the tensile strength of the steel we are using.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/backaxle2.png" class="img-fluid figure-img"></p>
@@ -233,9 +285,8 @@ Thoroughly evaluates and justifies design decisions using hand calculations, com
 </div>
 <p>The bending stress of 172.37 MPa was less than the yield stress of structural steel, and thus will not yield under the expected load.</p>
 </section>
-</section>
-<section id="bearings-lifetime-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="bearings-lifetime-evaluation">Bearings Lifetime Evaluation</h2>
+<section id="bearings-lifetime-evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="bearings-lifetime-evaluation">Bearings Lifetime Evaluation</h3>
 <p>In order to find the lifetime of the back axle bearings, we can model the bearings as a simply supported theme with 2 point loads acting on the bearings from the weight of the vehicle similar to how we modeled the system to solve for bending stress.</p>
 <p>This allows us to find the force of the bearings and the power outputted by the shaft.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -252,10 +303,13 @@ Thoroughly evaluates and justifies design decisions using hand calculations, com
 <figcaption>Back Shaft Bearings Lifetime Calculations</figcaption>
 </figure>
 </div>
-<p>The lifetime of the bearings is 6.36 * 10^13, which is a very long lifetime for our vehicle. Thus, the bearings chosen are approrpriate for it use.</p>
+<p>The lifetime of the bearings is <span class="math inline">\(6.36 * 10^{13}\)</span>, which is a very long lifetime for our vehicle. Thus, the bearings chosen are appropriate for it use.</p>
 </section>
-<section id="chain-calculations" class="level2">
-<h2 class="anchored" data-anchor-id="chain-calculations">Chain Calculations</h2>
+</section>
+<section id="chain-sprocket-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="chain-sprocket-analysis">Chain &amp; Sprocket Analysis</h2>
+<section id="chain-calculations" class="level3">
+<h3 class="anchored" data-anchor-id="chain-calculations">Chain Calculations</h3>
 <p>Our system uses a #35 chain to connect the sprocket, so we first had to determine the allowable horsepower of the chain and potential areas of failure. Thus, we first found the nominal power for a #35 single stranded chain.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -271,34 +325,65 @@ Thoroughly evaluates and justifies design decisions using hand calculations, com
 </figure>
 </div>
 </section>
-<section id="load-analysis-on-cart-and-frame-attachment" class="level2">
-<h2 class="anchored" data-anchor-id="load-analysis-on-cart-and-frame-attachment">Load Analysis on Cart and Frame Attachment</h2>
-<p><img src="images/cartframeload1.png" class="img-fluid" alt="Load Analysis on Cart and Frame Attachment"> <img src="images/cartframeload2.png" class="img-fluid" alt="Bolt Stress Calculations"> <img src="images/cartframeload3.png" class="img-fluid" alt="Bolt Stress Calculations"> <img src="images/cartframeload4.png" class="img-fluid" alt="ZipTie Frame Calculations"></p>
 </section>
-<section id="ziptie-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="ziptie-analysis">Ziptie Analysis</h2>
+<section id="frame-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="frame-analysis">Frame Analysis</h2>
+<section id="load-analysis-on-cart-and-frame-attachment" class="level3">
+<h3 class="anchored" data-anchor-id="load-analysis-on-cart-and-frame-attachment">Load Analysis on Cart and Frame Attachment</h3>
+<p><img src="images/alina1A.png" class="img-fluid"></p>
+<p><img src="images/alina1B.png" class="img-fluid"></p>
+<p><img src="images/alina1C.png" class="img-fluid"></p>
+</section>
+<section id="ziptie-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="ziptie-analysis">Ziptie Analysis</h3>
+<p><img src="images/alina1D.png" class="img-fluid"> <img src="images/alina1E.png" class="img-fluid"></p>
+</section>
+<section id="bending-stress-of-80-20---frame-loading-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="bending-stress-of-80-20---frame-loading-analysis">Bending Stress of 80-20 - Frame Loading Analysis</h3>
+<p><img src="images/alina1F.png" class="img-fluid"> <img src="images/alina1G.png" class="img-fluid"></p>
+</section>
+<section id="frame-attatchment-to-back-axle-hose-clamps" class="level3">
+<h3 class="anchored" data-anchor-id="frame-attatchment-to-back-axle-hose-clamps">Frame attatchment to Back Axle (Hose Clamps)</h3>
+<p><img src="images/alina1H.png" class="img-fluid"> <img src="images/alina1I.png" class="img-fluid"> <img src="images/alina1J.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="hand-brake-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="hand-brake-analysis">Hand Brake Analysis</h2>
+<p><img src="images/alina2A.png" class="img-fluid"> <img src="images/alina2B.png" class="img-fluid"> <img src="images/alina2C.png" class="img-fluid"></p>
+</section>
+<section id="front-axle-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="front-axle-analysis">Front Axle Analysis</h2>
+<section id="front-axle-analysis-on-bracket-holding-front-wheel" class="level3">
+<h3 class="anchored" data-anchor-id="front-axle-analysis-on-bracket-holding-front-wheel">Front Axle Analysis on Bracket Holding Front Wheel</h3>
+<p><img src="images/vicanalysis1a.png" class="img-fluid" alt="Analysis on bracket holding front wheel set up"> <img src="images/vicanalysis1b.png" class="img-fluid" alt="Analysis on bracket holding front wheel calculations"></p>
+</section>
+<section id="front-axle-analysis-on-weld" class="level3">
+<h3 class="anchored" data-anchor-id="front-axle-analysis-on-weld">Front Axle Analysis on weld</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ziptiecalc.png" class="img-fluid figure-img"></p>
-<figcaption>ZipTie Calculations</figcaption>
+<p><img src="images/vicanalysis2.png" class="img-fluid figure-img"></p>
+<figcaption>Analysis on Front Axle weld</figcaption>
 </figure>
 </div>
 </section>
-<section id="bending-stress-of-80-20" class="level2">
-<h2 class="anchored" data-anchor-id="bending-stress-of-80-20">Bending Stress of 80-20</h2>
-<p><img src="images/framebendingstress.png" class="img-fluid" alt="Bending Stress of Frame Calculations"> <img src="images/hoseclamp.png" class="img-fluid" alt="80-20 Stress Calculations"></p>
 </section>
-<section id="hose-clamp-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="hose-clamp-analysis">Hose Clamp Analysis</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/hoseclampcalc.png" class="img-fluid figure-img"></p>
-<figcaption>Hose Clamp Stress Calculations</figcaption>
-</figure>
-</div>
+<section id="fastner-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="fastner-analysis">80-20 Fastner Analysis</h2>
+<section id="assumptions-worst-case-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions-worst-case-analysis">Assumptions &amp; Worst Case Analysis</h3>
+<p><img src="images/sid1a.png" class="img-fluid" alt="Assumptions"> <img src="images/sid1b.png" class="img-fluid" alt="Dynamic loads considering speeds"> Static loads for this system include the weights of the cart, passenger, and motor. The dynamic loads consider speed and road obstacles. The system’s dynamic loads include accelerating, braking, and impact of obstacles.</p>
+</section>
+<section id="corner-bracket-analsis" class="level3">
+<h3 class="anchored" data-anchor-id="corner-bracket-analsis">80-20 Corner Bracket Analsis</h3>
+<p><img src="images/sid2a.png" class="img-fluid"> <img src="images/sid2b.png" class="img-fluid" alt="Bolt shear stress"> There are 4 corner brackets. Each bracket contains 2 screws and 2 T-nuts. This image shows the calculations that ensure the shear stress of each screw on the corner brackets does not exceed the tensile strength of the screws.</p>
+</section>
+<section id="cross-bar-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="cross-bar-analysis">80-20 Cross Bar Analysis</h3>
+<p><img src="images/sid3a.png" class="img-fluid" alt="Cross bar connection"> <img src="images/sid3b.png" class="img-fluid"> Analysis on each screw on the cross bar connections that ensures their shear stress does not exceed their tensile strength.</p>
 <p>PICTURES: ASSUMPTIONS NUMBERS/CONCLUSIONS DISCUSSION ON RESULTS</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

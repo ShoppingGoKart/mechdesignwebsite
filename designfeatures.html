@@ -6,8 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Vehicle 1">
-<meta name="description" content="add later">
+<meta name="description" content="Discussion on the steerage, frame, motor, and PWM controller subsystems">
 
 <title>Design Features of Main Subsystems – Ferrari GK</title>
 <style>
@@ -103,8 +102,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Evaluation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./references.html"> 
-<span class="menu-text">References</span></a>
+    <a class="nav-link" href="./cad.html"> 
+<span class="menu-text">CAD</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./drawings.html"> 
+<span class="menu-text">CAD Drawings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -124,8 +131,15 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#steerage-subsystem" id="toc-steerage-subsystem" class="nav-link active" data-scroll-target="#steerage-subsystem">Steerage Subsystem</a></li>
   <li><a href="#frame-subsystem" id="toc-frame-subsystem" class="nav-link" data-scroll-target="#frame-subsystem">Frame Subsystem</a></li>
+  <li><a href="#need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section" id="toc-need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section" class="nav-link" data-scroll-target="#need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section">NEED TO ADD “quantitative design decisions made via analysis described in the Evaluation of Design section”</a>
+  <ul class="collapse">
   <li><a href="#braking-subsystem" id="toc-braking-subsystem" class="nav-link" data-scroll-target="#braking-subsystem">Braking Subsystem</a></li>
   <li><a href="#motor-subsystem" id="toc-motor-subsystem" class="nav-link" data-scroll-target="#motor-subsystem">Motor Subsystem</a></li>
+  </ul></li>
+  <li><a href="#need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section-1" id="toc-need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section-1" class="nav-link" data-scroll-target="#need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section-1">NEED TO ADD “quantitative design decisions made via analysis described in the Evaluation of Design section”</a>
+  <ul class="collapse">
+  <li><a href="#pwm-control" id="toc-pwm-control" class="nav-link" data-scroll-target="#pwm-control">PWM Control</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -139,19 +153,13 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    add later
+    Discussion on the steerage, frame, motor, and PWM controller subsystems
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Vehicle 1 </p>
-          </div>
-  </div>
     
   
     
@@ -167,12 +175,41 @@ This section must include at least two quantitative design decisions made via an
 Identifies specific subsystems and/or features where significant work has been done by the team to advance the design. -->
 <section id="steerage-subsystem" class="level2">
 <h2 class="anchored" data-anchor-id="steerage-subsystem">Steerage Subsystem</h2>
-<p>The go-kart will be steered by the front wheels, as shown by the red frame in the figure below. The user will rotate the steering wheel, which in turn will rotate the steering column and Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions.</p>
+<p>The go-kart will be steered by the front wheels, using a Single Wheel Drive go-kart design. The user will rotate the steering wheel, which in turn will rotate the steering column welded to a lower bracket to make a Pitman arm. The Pitman arm is a shaft that translates rotary or angular movement into linear movement and is used in our steering subsystems to pivot the wheels. The steering column lower bracket is then connected to tie rods and connected to the wheel spindles. The wheels will be on a spindle on the front axle and controlled by the tie rods controlled by the Pitman arm. When designing this steering subsystem, we have to ensure that wheels will remain parallel, be wary of binding, and add stops to prevent involuntary motions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/completedSteering2.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Completed Steering Subsystem</figcaption>
+</figure>
+</div>
+<p>We opted for this design due to cost, feasibility, and common practice. To minimize the cost, the team designed around the tie rods and steering wheel lent to us by MACH, machined shaft sleeves to use available, free bearings, and machined the spindles and stearing arm. The spindle bracket and kingpin bolt is from a wheel castor, and used to hold the spindle. The spindle itself if machined from 1018 Carbon steel [hammer head stock] and welded to a bolt to hold the wheel and a steel plate to connect to the tie rods. We also machined sleeves to adapt the bolt to the wheel hole and sleeved to make the XXX” diameter steering coloums to fit in the 0.75” diameter bearings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spindleAndCastor.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Spindle, Kingpin, and Castor Bracket Connected to Frame</figcaption>
+</figure>
+</div>
+<p>The steering system involved multiple design decisions and iterations. For started, we wanted to ensure that we would not damage parts lent to us – meaning that we could not weld to the steering wheel, or cut the length of the pitman arms. This motivated frame and pitman arm design. We also decided to use two bearings to constrain the movement of the steering arm. Furthermore, human tests motivated the length of the pitman arm – originally, the arm was too long, and the steering wheel interfered with the space for the user. Finally, from preliminary testing, we noticed that slight imperfections in steering set up could lead to tilt within the wheels. To counteract this, the team employed a jack post between the wheels.</p>
 </section>
 <section id="frame-subsystem" class="level2">
 <h2 class="anchored" data-anchor-id="frame-subsystem">Frame Subsystem</h2>
-<p>The frame is built with a shopping cart and 80/20</p>
+<p>The frame is built using a shopping cart and 80/20. The legs of the shopping cart was removed with an angle grinder, allowing the cart to be closer to the ground. This was desired as a lower center of mass improves stability (less chance of tipping over), handling, and safety. The back of the shopping cart was extended to improve user comfort. The shopping cart provided us a base to design the rest of the system around. The grid cart made it easy to attatch wiring, the 80/20, and steering bearing. Moreover, the cage around the user adds a level of safety.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/shoppingCart2.JPEG" class="img-fluid figure-img"></p>
+<figcaption>Shopping cart before modifications</figcaption>
+</figure>
+</div>
+<p>Originally, we had debated welding a steel frame for the go kart as this is what we had seen for most online DIY go kart builds. However, we opted to use an 80/20 base under the shopping cart due to its availability and modularity. An <a href="https://scolton.blogspot.com/p/cap-kart.html">online blog</a> showed the feasibility, and encouraged us to move foward with the analysis and design. Moreover, the team was able to acquire 80-20 from a scrapped clinic prototype. The modularity and availablity was helpful in the prototyping stage, allowing each subteam to easily visualize changes. Moreover, the modularity and fastening ability helped connect all subsystems together. We used two layers of 80/20 in the frame for added strength. The 80/20 frame was connected to the shopping cart with industrial stength zipties.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/assembled.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Completed Cart</figcaption>
+</figure>
+</div>
 </section>
+<section id="need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section" class="level1">
+<h1>NEED TO ADD “quantitative design decisions made via analysis described in the Evaluation of Design section”</h1>
 <section id="braking-subsystem" class="level2">
 <h2 class="anchored" data-anchor-id="braking-subsystem">Braking Subsystem</h2>
 <p>The braking system will involve a lever that will apply a normal force on the back wheel of the goKart when pulled down. The braking line will be applied to both of the wheels.</p>
@@ -180,8 +217,18 @@ Identifies specific subsystems and/or features where significant work has been d
 <section id="motor-subsystem" class="level2">
 <h2 class="anchored" data-anchor-id="motor-subsystem">Motor Subsystem</h2>
 <p>For the motor system, we will have a single motor driving both of the back wheels. It will use gears to transmit power and sit in the back of our GoKart. In order to obtain enough torque to move the entire vehicle and user, a gear ratio of 6.5 was used, where the driving sprocket has 10 teeth and the sprocket driving the back axle has 65 teeth. A 35 chain was used to connect the two sprockets, and kept at a pretension. The back axle consisted of a 5/8 inch shaft that connected the 26 tooth sprocket, two block bearings mounted to an aluminum plate, and the two back wheels. The aluminum plate’s purpose is to mount the back axle system to the frame of the vehicle and also house the batteries. Keyhole slots and hose clamps were then used to fixture the sprockets and wheels in place so that they would rotate relative to the shaft.</p>
+</section>
+</section>
+<section id="need-to-add-quantitative-design-decisions-made-via-analysis-described-in-the-evaluation-of-design-section-1" class="level1">
+<h1>NEED TO ADD “quantitative design decisions made via analysis described in the Evaluation of Design section”</h1>
+<section id="pwm-control" class="level2">
+<h2 class="anchored" data-anchor-id="pwm-control">PWM Control</h2>
+<p>To give the user more control of the motor, the team used a <a href="https://www.amazon.com/dp/B07Y73MN5R?ref=ppx_yo2ov_dt_b_fed_asin_title">Pulse-Width Modulation (PWM) Contoller</a>. This controller uses a potentiometer to inform the duty cycle, reads the duty cycle in a form of a percentage on a seven-segment display, and includes a switch to turn on the motor, run the motor in reverse, and turn off the motor. PWM speed control works by driving the motor with a series of fast on and off pulses with variable duty cycle. The duty cycle informs the fraction of time the motor is on versus off, therby controlling the speed the motor with rotate.</p>
+<p>The team opted for this design as it would require minimal electrical work to integrate with our system, allowing us to focus on the mechanical design of our system. Originally, we had thought to use a potentiometer as part of a voltage divider circuit between the battery and motor. However the large voltage would require a physically large (and expensive) potentiometer and the large current needs of the motor could not be met with a voltage divider. Thus, we switched to a more common solution for motor speed control – a PWM controller. The specific <a href="https://www.amazon.com/dp/B07Y73MN5R?ref=ppx_yo2ov_dt_b_fed_asin_title">Contoller</a> choosen is compatible with DC voltages between 10 to 55V and a maximum current of 60A. As we use 24V and have a current below the maximum, this controller is applicable for our design.</p>
+<p>We are ultimately happy with the PWM control as it allows the user to control the speed and allows for the motor to run in reverse by inverting the voltage, which was one of our stretch goals. To ensure the safety of our design, we also integrated an E-STOP in our design that would cut the power to the motor when pressed. This E-STOP was wired in series between the battery and PWM Controller.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
